@@ -1,31 +1,6 @@
-import React, { Component } from 'react'
-import Introduction from './Introduction'
-import Header from './Header'
-import RecentOutput from './RecentOutput'
-import { withStyles } from 'material-ui/styles'
+import Layout from './Layout'
+import { withLightTheme } from '../themes'
 
-const styles = {
-  root: {
-  },
-  body: {
-    padding: 20,
-    maxWidth: 600,
-    margin: 'auto',
-  },
-}
-class App extends Component {
-  render() {
-    const { classes } = this.props
-    return (
-      <div className={classes.root}>
-        <Header/>
-        <div className={classes.body} >
-          <Introduction />
-          <RecentOutput />
-        </div>
-      </div>
-    )
-  }
-}
+const App = Layout
 
-export default withStyles(styles)(App)
+export default withLightTheme(App)

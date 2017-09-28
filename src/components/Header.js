@@ -1,10 +1,11 @@
 import React from 'react'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
+import { withDarkTheme } from '../themes'
 
-const styles = {
+const styles = theme => ({
   root: {
-    backgroundColor: '#121212',
+    backgroundColor: theme.palette.background.default,
     backgroundImage: 'url(/images/desktop.jpg)',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -12,19 +13,15 @@ const styles = {
     textAlign: 'center',
     padding: '60px',
     position: 'relative',
-    marginBottom: 60,
   },
   Box: {
     border: '3px solid white',
     margin: 'auto',
-    maxWidth: 600,
+    maxWidth: theme.layout.maxWidth,
     padding: 60,
     boxSizing: 'border-box',
   },
-  text: {
-    color: 'white',
-  },
-}
+})
 const Header = ({ classes }) => (
   <header className={classes.root}>
     <div  className={classes.Box}>
@@ -38,4 +35,4 @@ const Header = ({ classes }) => (
   </header>
 )
 
-export default withStyles(styles)(Header)
+export default withDarkTheme(withStyles(styles)(Header))
