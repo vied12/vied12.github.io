@@ -1,18 +1,35 @@
 import React from 'react'
 import Typography from 'material-ui/Typography'
+import Grid from 'material-ui/Grid'
 import { withStyles } from 'material-ui/styles'
 import { withDarkTheme } from '../themes'
 import Project from './Project'
-import projects from '../projects.csv'
+import projectsRaw from '../projects.csv'
 import { tsvParse } from 'd3-dsv'
+import { GridList, GridListTile } from 'material-ui/GridList'
+
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.default,
-    // color: theme.palette.background.default,
   },
 })
 
-console.log(tsvParse(projects))
+const renderProjectsInGrid = (projects, classes) => (
+  <div>
+    <Grid
+      container
+      spacing={0}
+    >
+      {projects.map((p, i) => (
+        <Grid item xs={12} sm={6} key={i}>
+          <Project project={p} />
+        </Grid>
+      ))}
+    </Grid>
+  </div>
+)
+
+const projects = tsvParse(projectsRaw)
 const RecentOutput = ({ classes }) => (
   <div className={classes.root}>
     <Typography type="display2">
@@ -21,15 +38,15 @@ const RecentOutput = ({ classes }) => (
     <Typography type="display1">
       Tools
     </Typography>
-    {projects.map((p, i) =>
-      <Project key={i} project={p} />
-    )}
+    {renderProjectsInGrid(projects.filter(p => p.isTool), classes)}
     <Typography type="display1">
       Story Telling
     </Typography>
+    {renderProjectsInGrid(projects.filter(p => p.isStoryTelling), classes)}
     <Typography type="display1">
-      For fun
+      Art/Fun
     </Typography>
+    {renderProjectsInGrid(projects.filter(p => p.isArt), classes)}
   </div>
 )
 

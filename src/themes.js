@@ -7,7 +7,7 @@ const titleStyle = {
 }
 const theme = {
   layout: {
-    maxWidth: 600,
+    maxWidth: 900,
   },
   typography: {
     fontFamily: 'Inconsolata,monospace,Arial',

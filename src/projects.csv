@@ -1,2 +1,10 @@
-name	description	picture	year
-Superdesk	Sourcefabric		2017
+name	description	picture	picture2	year	link	isTool	isStoryTelling	isArt
+Superdesk	Sourcefabric	superdesk.png		2017		TRUE		
+Jump	LED strip game	LoopED.jpg		2017				TRUE
+Bus Notifier		busnotifier.jpg		2016	https://github.com/vied12/public-transport-notifier			TRUE
+Liveblog	Sourcefabric	liveblog.png	liveblog.jpg	2015		TRUE		
+Detective.io	Journalism++	detective.png		2014		TRUE		
+Wold of Work	Journalism++	wow.png					TRUE	
+Datawrapper	Create amazing visualizations in seconds	datawrapper.png			https://www.datawrapper.de	TRUE		
+The Migrant Files	Winner of the Datajounalism Awards, an open database containing information about over 29,000 people who died on their way to Europe since 2000, collated from publicly available sources	tmf.png					TRUE	
+Jeu d’influences		jeudinfluences.jpg		2014	http://jeu-d-influences.france5.fr/		TRUE	
