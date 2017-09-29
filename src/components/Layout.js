@@ -10,7 +10,8 @@ const styles = theme => ({
   },
   body: {
     '& > * > *': {
-      padding: 20,
+      paddingLeft: 20,
+      paddingRight: 20,
       maxWidth: theme.layout.maxWidth,
       margin: 'auto',
     }

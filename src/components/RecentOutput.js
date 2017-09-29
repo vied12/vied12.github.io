@@ -4,49 +4,64 @@ import Grid from 'material-ui/Grid'
 import { withStyles } from 'material-ui/styles'
 import { withDarkTheme } from '../themes'
 import Project from './Project'
-import projectsRaw from '../projects.csv'
+import projectsRaw from '../projects.tsv'
 import { tsvParse } from 'd3-dsv'
-import { GridList, GridListTile } from 'material-ui/GridList'
+import { orderBy } from 'lodash'
 
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.default,
+    padding: '60px 0',
   },
+  categories: {
+    paddingTop: 10,
+    '& h1': {
+      marginBottom: 40,
+    },
+    paddingBottom: 40,
+  }
 })
 
-const renderProjectsInGrid = (projects, classes) => (
-  <div>
-    <Grid
-      container
-      spacing={0}
-    >
-      {projects.map((p, i) => (
-        <Grid item xs={12} sm={6} key={i}>
-          <Project project={p} />
-        </Grid>
-      ))}
-    </Grid>
-  </div>
-)
-
-const projects = tsvParse(projectsRaw)
+const projects = orderBy(tsvParse(projectsRaw), ['year'], ['desc'])
+const categories = [
+  {
+    title: 'Tools',
+    projects: projects.filter(p => p.isTool),
+  },
+  {
+    title: 'Story Telling',
+    projects: projects.filter(p => p.isStoryTelling),
+  },
+  {
+    title: 'Side Projects, Art & whatever',
+    projects: projects.filter(p => p.isArt),
+  },
+]
 const RecentOutput = ({ classes }) => (
   <div className={classes.root}>
     <Typography type="display2">
       Recent Output
     </Typography>
-    <Typography type="display1">
-      Tools
-    </Typography>
-    {renderProjectsInGrid(projects.filter(p => p.isTool), classes)}
-    <Typography type="display1">
-      Story Telling
-    </Typography>
-    {renderProjectsInGrid(projects.filter(p => p.isStoryTelling), classes)}
-    <Typography type="display1">
-      Art/Fun
-    </Typography>
-    {renderProjectsInGrid(projects.filter(p => p.isArt), classes)}
+    {categories.map((c, i)=> (
+      <div
+        key={c.title}
+        className={classes.categories}
+      >
+        <Typography type="display1">
+          {c.title}
+        </Typography>
+        <Grid
+          container
+          spacing={24}
+        >
+          {c.projects.map((p, i) => (
+            <Grid item xs={12} sm={12} md={c.projects.length % 2 === 0 ? 6 : 4} key={i}>
+              <Project project={p}/>
+            </Grid>
+          ))}
+        </Grid>
+      </div>
+    ))}
   </div>
 )
 

@@ -191,7 +191,7 @@ module.exports = {
             ],
           },
           {
-            test: [/\.csv$/],
+            test: [/\.tsv$/],
             loader: require.resolve('raw-loader'),
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
@@ -204,7 +204,7 @@ module.exports = {
             // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
-            exclude: [/\.js$/, /\.html$/, /\.json$/, /\.csv$/],
+            exclude: [/\.js$/, /\.html$/, /\.json$/, /\.tsv$/],
             loader: require.resolve('file-loader'),
             options: {
               name: 'static/media/[name].[hash:8].[ext]',

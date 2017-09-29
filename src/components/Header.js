@@ -6,7 +6,7 @@ import { withDarkTheme } from '../themes'
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.default,
-    backgroundImage: 'url(/images/desktop.jpg)',
+    backgroundImage: 'url(screenshots/looped.gif)',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
@@ -15,7 +15,7 @@ const styles = theme => ({
     position: 'relative',
   },
   Box: {
-    border: '3px solid white',
+    // border: '3px solid white',
     margin: 'auto',
     maxWidth: theme.layout.maxWidth,
     padding: 60,
