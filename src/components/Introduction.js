@@ -1,7 +1,6 @@
 import React from 'react'
 import Typography from 'material-ui/Typography'
 import Button from 'material-ui/Button'
-import IconButton from 'material-ui/IconButton'
 import { withStyles } from 'material-ui/styles'
 import Margin from './Margin'
 import KeyIcon from 'material-ui-icons/VpnKey'
@@ -45,10 +44,10 @@ const Introduction = ({ classes }) => (
       </Typography>
         <div className={classes.links}>
           <Button
-            href="https://github.com/vied12"
+            href="mailto:vied12@gmail.com"
             target="_blank"
           >
-            <i className="fa fa-github"></i>
+            <i className="fa fa-envelope-o"></i>
           </Button>
           <Button
             href="https://twitter.com/vied12"
@@ -57,16 +56,18 @@ const Introduction = ({ classes }) => (
             <i className="fa fa-twitter"></i>
           </Button>
           <Button
-            href="mailto:vied12@gmail.com"
+            href="https://github.com/vied12"
             target="_blank"
           >
-            <i className="fa fa-envelope-o"></i>
+            <i className="fa fa-github"></i>
           </Button>
           <Button
             href="https://keybase.io/vied12"
             target="_blank"
+            style={{ top: 5, position: 'relative' }}
           >
-            <KeyIcon style={{ width: 30, height: 30 }} />
+            {  false  && <i className="fa fa-key"></i>}
+            <KeyIcon style={{ width: 40, height: 35 }} />
           </Button>
         </div>
     </Margin>

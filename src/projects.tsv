@@ -1,13 +1,14 @@
 name	description	picture	year	link	isTool	isStoryTelling	isArt	featured
 Superdesk	Content creation, production, distribution, archiving and curation. Modular by design and developed continuously via partnerships with news organizations worldwide.	superdesk.png	2017	https://www.superdesk.org/	TRUE			
 Jump	You are a pixel on the strip led and your controller is your phone. To survive you need to jump when the killer pixel comes to you. You can also fight back and send the killer in the other way.	looped.gif	2017				TRUE	
-Smog Alarm	Smog Alarm is collecting the daily reports from the German Environmental Protection Agency who is measuring the air quality. This tool helps you to find your closest station and give you the possibility to follow it by receiving Messenger messages, emails or RSS feeds.	smogalarm.jpg	2017	http://www.smogalarm.org			TRUE	
+Smog Alarm	Smog Alarm is collecting the daily reports from the German Environmental Protection Agency who is measuring the air quality. This tool helps you to find your closest station and give you the possibility to follow it by receiving Messenger messages, emails or RSS feeds.	smogalarm.jpg	2017	http://www.smogalarm.org			TRUE	TRUE
 Bus Notifier	"Display the public transport departure time for a given station in a little box for your bathroom. Color lights induces the relative imminence of your commute.
 Push the buttons to navigate through the next departures."	bus.gif	2016	https://github.com/vied12/public-transport-notifier			TRUE	
 Pillen	The colorimetric repository of little pills	pillen.png	2016	http://vied12.github.io/pillen/				
 Liveblog	Sourcefabric's Live Blog is an open source web app that enables journalists to provide immediate and ongoing coverage on rapidly evolving news events.	liveblog.gif	2015	https://www.sourcefabric.org/en/liveblog/	TRUE			
 The Migrant Files	"Winner of the Datajournalism Awards.
-An open database containing information about over 29,000 people who died on their way to Europe."	tmf.jpg	2015	http://www.themigrantsfiles.com/		TRUE		TRUE
+An open database containing information about over 29,000 people who died on their way to Europe."	tmf.jpg	2015	http://www.themigrantsfiles.com/		TRUE		
+Energy	An interactive infographic about energy for municipal decision-makers and city planning	energy.gif	2015	https://vied12.github.io/energy/		TRUE		
 Detective.io	Detective.io is a platform that hosts your investigation and lets you make powerful queries to mine it. Simply describe your field of study and detective.io builds the input interface as well as a state-of-the-art front-end. 	detective.gif	2014		TRUE			
 Jeu d’influences	"Best cross-media piece at Liege Web Festival – 2014.
 Have you ever faced a communication crisis? Jeu d'influences puts you right in front of it."	jeudinfluences.gif	2014	http://jeu-d-influences.france5.fr/		TRUE		
@@ -16,4 +17,3 @@ Broken Promises	What should a journalist investigate today, according to what ha
 World of Work	"Ordered by Arte, World of Work is a survey that aims to measure the perception of the work by young Europeans and to compare their opinions with the ones of their  generations and older.
 The project gathered more that 10 000 users."	wow.png				TRUE		
 Spending Stories	Ordered by the Open Knowledge Foundation it aims at improving fiscal literacy and providing greater awareness of budget data worldwide. It enables users to put amounts into perspective. The results take into account inflation in the country where the expenditure has been realized.	spendingstories.png		http://spendingstories.org	TRUE			
-Energy	Eine interaktive Infografik für kommunale Entscheidungsträger und Stadtplaner.	energy.gif	2015			TRUE		

@@ -23,7 +23,7 @@ const styles = theme => ({
   }
 })
 
-const projects = orderBy(tsvParse(projectsRaw), ['year'], ['desc'])
+const projects = orderBy(tsvParse(projectsRaw), ['featured', 'year'], ['desc', 'desc'])
 
 const categories = [
   {
@@ -62,8 +62,8 @@ const RecentOutput = ({ classes }) => (
             spacing={24}
           >
             {c.projects.map((p, i) => (
-              <Grid item xs={12} sm={12} md={c.projects.length % 2 === 0 ? 6 : 4} key={i}>
-                <Project project={p}/>
+              <Grid item xs={12} sm={12} md={p.featured ? 12 : 6} key={i}>
+                <Project project={p} />
               </Grid>
             ))}
           </Grid>

@@ -17,7 +17,6 @@ const styles = theme => ({
     padding: 10,
   },
   active: {
-    // border: `4px solid ${theme.palette.text.secondary}`,
     '& $background': {
       opacity: .2,
     },
@@ -52,7 +51,10 @@ const styles = theme => ({
 })
 const Project = ({ classes, project, active }) => (
   <div
-  className={classNames(classes.root, {[classes.active]: active })}
+    className={classNames(classes.root, {
+      [classes.active]: active,
+      [classes.hasLink]: !!project.link,
+    })}
   >
     <div
       className={classes.background}
