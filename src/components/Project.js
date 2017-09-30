@@ -25,9 +25,6 @@ const styles = theme => ({
       visibility: 'visible',
     },
   },
-  // active: {
-  //   visibility: 'visible',
-  // },
   showOnHover: {
     visibility: 'hidden'
   },

@@ -5,18 +5,7 @@ import Footer from './Footer'
 import RecentOutput from './RecentOutput'
 import { withStyles } from 'material-ui/styles'
 
-const styles = theme => ({
-  root: {
-  },
-  body: {
-    '& > * > *': {
-      paddingLeft: 20,
-      paddingRight: 20,
-      maxWidth: theme.layout.maxWidth,
-      margin: 'auto',
-    }
-  },
-})
+const styles = theme => ({})
 class Layout extends Component {
   render() {
     const { classes } = this.props

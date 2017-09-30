@@ -7,6 +7,7 @@ import Project from './Project'
 import projectsRaw from '../projects.tsv'
 import { tsvParse } from 'd3-dsv'
 import { orderBy } from 'lodash'
+import Margin from './Margin'
 
 const styles = theme => ({
   root: {
@@ -23,6 +24,7 @@ const styles = theme => ({
 })
 
 const projects = orderBy(tsvParse(projectsRaw), ['year'], ['desc'])
+
 const categories = [
   {
     title: 'Tools',
@@ -39,27 +41,33 @@ const categories = [
 ]
 const RecentOutput = ({ classes }) => (
   <div className={classes.root}>
-    <Typography type="display2">
-      Recent Output
-    </Typography>
+    <Margin>
+      <Typography type="display2">
+        Recent Output
+      </Typography>
+    </Margin>
     {categories.map((c, i)=> (
       <div
         key={c.title}
         className={classes.categories}
       >
-        <Typography type="display1">
-          {c.title}
-        </Typography>
-        <Grid
-          container
-          spacing={24}
-        >
-          {c.projects.map((p, i) => (
-            <Grid item xs={12} sm={12} md={c.projects.length % 2 === 0 ? 6 : 4} key={i}>
-              <Project project={p}/>
-            </Grid>
-          ))}
-        </Grid>
+        <Margin>
+          <Typography type="display1">
+            {c.title}
+          </Typography>
+        </Margin>
+        <Margin disableOnMobile>
+          <Grid
+            container
+            spacing={24}
+          >
+            {c.projects.map((p, i) => (
+              <Grid item xs={12} sm={12} md={c.projects.length % 2 === 0 ? 6 : 4} key={i}>
+                <Project project={p}/>
+              </Grid>
+            ))}
+          </Grid>
+        </Margin>
       </div>
     ))}
   </div>
