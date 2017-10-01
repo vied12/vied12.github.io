@@ -31,16 +31,12 @@ const Introduction = ({ classes }) => (
     <Margin>
       <Typography className={classes.text}>
         Hi,<br/>
-        I'm developer.
-        The last few years I have been making tools for news agencies
+        I'm developer in Berlin.
+        The last few years I buid tools for news agencies
         at <a href="https://sourcefabric.org" target="_blank" rel="noopener noreferrer">Sourcefabric</a> after
-        having been
-        at <a href="http://jplusplus.org" target="_blank" rel="noopener noreferrer">Journalism++</a> doing
-        interactive story telling and data visualizations.
-
-        I use open source softwares and publish my work as much
-        as possible
-        on <a href="https://github.com/vied12" target="_blank" rel="noopener noreferrer">github.com/vied12</a>.
+        having been making interactive story telling and data visualizations
+        at <a href="http://jplusplus.org" target="_blank" rel="noopener noreferrer">Journalism++</a>.
+        I work now as freelancer and help to solve problems.
       </Typography>
         <div className={classes.links}>
           <Button
