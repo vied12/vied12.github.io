@@ -32,11 +32,11 @@ const Introduction = ({ classes }) => (
       <Typography className={classes.text}>
         Hi,<br/>
         I'm developer in Berlin.
-        The last few years I buid tools for news agencies
+        The last few years I built tools for news agencies
         at <a href="https://sourcefabric.org" target="_blank" rel="noopener noreferrer">Sourcefabric</a> after
         having been making interactive story telling and data visualizations
-        at <a href="http://jplusplus.org" target="_blank" rel="noopener noreferrer">Journalism++</a>.
-        I work now as freelancer and help to solve problems.
+        at <a href="http://jplusplus.org" target="_blank" rel="noopener noreferrer">Journalism++</a>.<br/>
+        I work now as freelancer.
       </Typography>
         <div className={classes.links}>
           <Button

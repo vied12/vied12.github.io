@@ -31,20 +31,21 @@ const projects = orderBy(tsvParse(projectsRaw), ['featured', 'year'], ['desc', '
 const categories = [
   {
     title: 'Tools',
-    headline: 'Solve problems',
+    headline: 'face a problem and solve it',
     projects: projects.filter(p => p.isTool),
   },
   {
     title: 'Story Telling',
-    headline: 'Encouraging people to understand via exploration and intuition',
+    headline: 'encourage people to understand via exploration and intuition',
     projects: projects.filter(p => p.isStoryTelling),
   },
   {
-    title: 'Side Projects, Art & whatever',
-    headline: 'I made these things to learn something new, but mostly to have fun',
+    title: 'Side Projects, Art & Whatever',
+    headline: 'are intended for learning something new, but mostly for having fun',
     projects: projects.filter(p => p.isArt),
   },
 ]
+
 const RecentOutput = ({ classes }) => (
   <div className={classes.root}>
     <Margin>
@@ -52,7 +53,7 @@ const RecentOutput = ({ classes }) => (
         Recent Output
       </Typography>
       <Typography>
-        This is what I have been doing during all this time
+        This is what I have been doing during this time
       </Typography>
     </Margin>
     {categories.map((c, i)=> (
