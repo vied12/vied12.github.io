@@ -15,9 +15,9 @@ const styles = theme => ({
     padding: '60px 0',
   },
   categories: {
-    paddingTop: 10,
+    paddingTop: 30,
     '& h1': {
-      marginBottom: 40,
+      marginBottom: 60,
     },
     paddingBottom: 40,
   },
