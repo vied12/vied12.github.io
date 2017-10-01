@@ -4,6 +4,7 @@ import Button from 'material-ui/Button'
 import { withStyles } from 'material-ui/styles'
 import classNames from 'classnames'
 import activeOnHover from '../helpers/activeOnHover'
+import preloadPicture from '../helpers/preloadPicture'
 
 const styles = theme => ({
   root: {
@@ -49,7 +50,8 @@ const styles = theme => ({
     }
   }
 })
-const Project = ({ classes, project, active }) => (
+
+const Project = ({ classes, project, active, picture }) => (
   <div
     className={classNames(classes.root, {
       [classes.active]: active,
@@ -58,7 +60,7 @@ const Project = ({ classes, project, active }) => (
   >
     <div
       className={classes.background}
-      style={{backgroundImage: `url(screenshots/${project.picture})`}}
+      style={{backgroundImage: `url(${picture})`}}
     />
     <div className={classes.body}>
       <Typography noWrap type="display1" id={project.name}>{project.name}</Typography>
@@ -70,6 +72,7 @@ const Project = ({ classes, project, active }) => (
     {project.link &&
       <Button
         href={project.link}
+        rel="noopener noreferrer"
         target="_blank"
         className={classNames(classes.openLink, classes.showOnHover)}
       >
@@ -79,4 +82,4 @@ const Project = ({ classes, project, active }) => (
   </div>
 )
 
-export default withStyles(styles)(activeOnHover(Project))
+export default withStyles(styles)(preloadPicture(activeOnHover(Project)))

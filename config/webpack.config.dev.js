@@ -191,8 +191,15 @@ module.exports = {
             ],
           },
           {
-            test: [/\.tsv$/],
+            test: [/\.tsv$/,],
             loader: require.resolve('raw-loader'),
+          },
+          {
+            test: [/\.svg$/],
+            loader: require.resolve('url-loader'),
+            options: {
+              limit: 8192
+            }
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
@@ -204,7 +211,7 @@ module.exports = {
             // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
-            exclude: [/\.js$/, /\.html$/, /\.json$/, /\.tsv$/],
+            exclude: [/\.js$/, /\.html$/, /\.json$/, /\.tsv$/, /\.svg$/],
             loader: require.resolve('file-loader'),
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
