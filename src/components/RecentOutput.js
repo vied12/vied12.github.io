@@ -20,7 +20,10 @@ const styles = theme => ({
       marginBottom: 40,
     },
     paddingBottom: 40,
-  }
+  },
+  title: {
+    textAlign: 'center',
+  },
 })
 
 const projects = orderBy(tsvParse(projectsRaw), ['featured', 'year'], ['desc', 'desc'])
@@ -52,7 +55,7 @@ const RecentOutput = ({ classes }) => (
         className={classes.categories}
       >
         <Margin>
-          <Typography type="display1">
+          <Typography type="display1" className={classes.title}>
             {c.title}
           </Typography>
         </Margin>

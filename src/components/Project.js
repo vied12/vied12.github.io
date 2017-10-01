@@ -61,7 +61,7 @@ const Project = ({ classes, project, active }) => (
       style={{backgroundImage: `url(screenshots/${project.picture})`}}
     />
     <div className={classes.body}>
-      <Typography noWrap type="display1">{project.name}</Typography>
+      <Typography noWrap type="display1" id={project.name}>{project.name}</Typography>
       <Typography
         className={classNames(classes.showOnHover)}
         dangerouslySetInnerHTML={{__html: project.description.replace(/\n/g, '<br/>')}}
