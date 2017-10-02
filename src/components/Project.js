@@ -5,6 +5,8 @@ import { withStyles } from 'material-ui/styles'
 import classNames from 'classnames'
 import activeOnHover from '../helpers/activeOnHover'
 import preloadPicture from '../helpers/preloadPicture'
+import activeShortlyWhenVisible from '../helpers/activeShortlyWhenVisible'
+import compose from 'recompose/compose'
 
 const styles = theme => ({
   root: {
@@ -51,8 +53,9 @@ const styles = theme => ({
   }
 })
 
-const Project = ({ classes, project, active, picture }) => (
+const Project = ({ classes, project, active, picture, onClick }) => (
   <div
+    onClick={onClick}
     className={classNames(classes.root, {
       [classes.active]: active,
       [classes.hasLink]: !!project.link,
@@ -82,4 +85,9 @@ const Project = ({ classes, project, active, picture }) => (
   </div>
 )
 
-export default withStyles(styles)(preloadPicture(activeOnHover(Project)))
+export default compose(
+  withStyles(styles),
+  preloadPicture,
+  activeShortlyWhenVisible,
+  activeOnHover,
+)(Project)

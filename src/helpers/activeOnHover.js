@@ -1,7 +1,7 @@
 import React from 'react'
 
 const activeOnHover = (Component) => (
-  class extends React.Component {
+  class ActiveOnHover extends React.Component {
     state = {
       active: false,
     }
@@ -21,13 +21,17 @@ const activeOnHover = (Component) => (
       this.onHashChange({ target: window })
     }
     render() {
+      const { active, ...other } = this.props
+      const shouldActive = active || this.state.active
       return (
-        <div onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
-          <Component active={this.state.active} {...this.props} />
+        <div
+          onMouseEnter={this.onMouseEnter}
+          onMouseLeave={this.onMouseLeave}
+        >
+          <Component active={shouldActive} {...other} />
         </div>
       )
     }
-
   }
 )
 
