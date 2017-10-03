@@ -66,7 +66,14 @@ const Project = ({ classes, project, active, picture, onClick }) => (
       style={{backgroundImage: `url(${picture})`}}
     />
     <div className={classes.body}>
-      <Typography noWrap type="display1" id={project.name}>{project.name}</Typography>
+      <Typography type="display2" id={project.name}>
+        {project.name}
+        <Typography type="body2">
+          {project.tags.replace(/!/g, '').split('\n').map((item, key) => (
+            <span key={key}>{item}<br/></span>
+          ))}
+        </Typography>
+      </Typography>
       <Typography
         className={classNames(classes.showOnHover)}
         dangerouslySetInnerHTML={{__html: project.description.replace(/\n/g, '<br/>')}}

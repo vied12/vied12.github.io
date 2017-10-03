@@ -10,18 +10,20 @@ const loadPicture = (Component) => (
       this.state = {
         picture: svg[camelCase(this.props.project.picture + '.svg')],
       }
+      this.image = {}
     }
     onImageLoaded = (imageName) => {
       this.setState({
         picture: `screenshots/${this.props.project.picture}`
       })
     }
-    componentWillReceiveProps = (nextProps) => {
+    componentWillUnmount = () => {
+      this.image.onload = undefined
     }
     preloadImage = (picture) => {
-      const image = new Image()
-      image.onload = () => this.onImageLoaded(picture)
-      image.src = `screenshots/${picture}`
+      this.image = new Image()
+      this.image.onload = () => this.onImageLoaded(picture)
+      this.image.src = `screenshots/${picture}`
     }
     render = () => (
       <Component {...this.props} picture={this.state.picture} />

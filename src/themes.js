@@ -19,6 +19,8 @@ const theme = {
     display2: titleStyle,
     display3: titleStyle,
     display4: titleStyle,
+    title: titleStyle,
+    headline: titleStyle,
   },
 }
 export const lightTheme = createMuiTheme(theme)

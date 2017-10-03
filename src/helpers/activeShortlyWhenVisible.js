@@ -11,6 +11,9 @@ const activeShortlyWhenVisible = (Component) => {
     onChange = (isVisible) => {
       if (isVisible) {
         this.setState({ active: false })
+      } else {
+        this.setState({ active: true })
+
       }
     }
     render() {
@@ -19,7 +22,7 @@ const activeShortlyWhenVisible = (Component) => {
         return <Component active={active} {...other} />
       }
       return (
-        <VisibilitySensor onChange={this.onChange} minTopValue={100} partialVisibility>
+        <VisibilitySensor onChange={this.onChange} minTopValue={120} partialVisibility>
           <Component
             {...other}
             active={this.state.active}
