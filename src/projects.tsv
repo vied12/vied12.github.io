@@ -6,9 +6,9 @@ Bus Notifier	Display the public transport departure time for a given station in 
 Pillen	The colorimetric repository of little pills	pillen.png		2016	http://vied12.github.io/pillen/				
 Liveblog	Sourcefabric's Live Blog is an open source web app that enables journalists to provide immediate and ongoing coverage on rapidly evolving news events.	liveblog.gif	Python, Flask, Angular.js, High Traffic, API	2015	https://www.sourcefabric.org/en/liveblog/	TRUE			
 The Migrant Files	"Winner of the Datajournalism Awards 2014.
-An open database containing information about over 29,000 people who died on their way to Europe."	tmf.jpg	!Parser, !Bulk Upload, Graph network analysis (Neo4j)	2014	http://www.themigrantsfiles.com/		TRUE		
+An open database containing information about over 29,000 people who died on their way to Europe."	tmf.jpg	!Parser, !Bulk Upload, Neo4j	2014	http://www.themigrantsfiles.com/		TRUE		
 Energy	An interactive infographic about energy for municipal decision-makers and city planning	energy.gif	Map	2015	https://vied12.github.io/energy/		TRUE		
-Detective.io	Detective.io is a platform that hosts your investigation and lets you make powerful queries to mine it. Simply describe your field of study and detective.io builds the input interface as well as a state-of-the-art front-end. 	detective.gif	Graph network analysis (Neo4j), Django, Angular.js, API	2014		TRUE			
+Detective.io	Detective.io is a platform that hosts your investigation and lets you make powerful queries to mine it. Simply describe your field of study and detective.io builds the input interface as well as a state-of-the-art front-end. 	detective.gif	Neo4j, Django, Angular.js, API	2014		TRUE			
 Jeu d’influences	"Best cross-media piece at Liege Web Festival – 2014.
 Have you ever faced a communication crisis? Jeu d'influences puts you right in front of it."	jeudinfluences.gif	!Persistence, !Optimization, Angular.js	2014	http://jeu-d-influences.france5.fr/		TRUE		
 World of Work	"Ordered by Arte, World of Work is a survey that aims to measure the perception of the work by young Europeans and to compare their opinions with the ones of their  generations and older.
