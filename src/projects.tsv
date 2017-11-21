@@ -1,6 +1,6 @@
 name	description	picture	tags	year	link	isTool	isStoryTelling	isArt	featured
 Superdesk	Content creation, production, distribution, archiving and curation. Modular by design and developed continuously via partnerships with news organizations worldwide.	superdesk.png	Plugin System, Planning Component, Python, React, Angular.js, High Traffic, API	2017	https://www.superdesk.org/	TRUE			
-Jump	You are a pixel on the strip led and your controller is your phone. To survive you need to jump when the killer pixel comes to you. You can also fight back and send the killer in the other way.	looped.gif	Electronic, LED strip, Raspberry Pi, Python, React	2017				TRUE	
+Jump	You are a pixel on the strip led and your controller is your phone. To survive you need to jump when the killer pixel comes to you. You can also fight back and send the killer in the other way.	looped.gif	Electronic, LED strip, Raspberry Pi, Python, React	2017				TRUE	TRUE
 Smog Alarm	Smog Alarm is collecting the daily reports from the German Environmental Protection Agency who is measuring the air quality. This tool helps you to find your closest station and give you the possibility to track it by receiving Messenger messages, emails or RSS feeds. A messenger bot can help you to subscribe.	smogalarm.jpg	Messenger Bot, Python, Django, D3.js, API, Map, 	2017	http://www.smogalarm.org			TRUE	TRUE
 Bus Notifier	Display the public transport departure time for a given station in a little box for your bathroom. Colored light induces the relative imminence of your commute. Push the buttons to navigate through the next departures.	bus.gif	Electronic, Welds, Raspberry Pi, Python, LED strip, API	2016	https://github.com/vied12/public-transport-notifier			TRUE	
 Pillen	The colorimetric repository of little pills	pillen.png		2016	http://vied12.github.io/pillen/				
@@ -19,3 +19,7 @@ Datawrapper	Create charts and maps in seconds	datawrapper.gif	D3.js, Plugin Syst
 Spending Stories	Ordered by the Open Knowledge Foundation it aims at improving fiscal literacy and providing greater awareness of budget data worldwide. It enables users to put amounts into perspective. The results take into account inflation in the country where the expenditure has been realized.	spendingstories.png	Python, Django	2013	http://spendingstories.org	TRUE			
 Wikileaks	US, Australia isolated in TPP negotiations	wikileaks.png	Map, D3.js	2013	https://wikileaks.org/US-Australia-isolated-in-TPP.html		TRUE		
 Broken Promises	What should a journalist investigate today, according to what has been promised in the past?	brokenpromises.png	!Jobs Runner, !Report System, Python, API	1013	http://jplusplus.se/broken-promises-the-memory-you-lost-is-here/	TRUE			
+Loopr	"L8pr is an Internet Player.
+Create your own channel made of Youtube videos, Soundcloud tracks illustrated with GIFs;
+add your tweets and RSS to have a complete, multimedia, multi-content looping channel.
+Made with Benjamin Etco and love"	loopr.gif	Python, API, React	2016	https://l8pr.herokuapp.com			TRUE	

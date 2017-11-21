@@ -13,7 +13,7 @@ const Footer = ({ classes }) => (
   <Margin>
     <footer className={classes.root}>
       <Typography>
-        © 2017 Edouard Richard
+        © {new Date().getFullYear()} Edouard Richard
       </Typography>
     </footer>
   </Margin>
