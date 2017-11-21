@@ -13,6 +13,7 @@ import datawrapperGifSvg from './datawrapper.gif.svg';
 import spendingstoriesPngSvg from './spendingstories.png.svg';
 import wikileaksPngSvg from './wikileaks.png.svg';
 import brokenpromisesPngSvg from './brokenpromises.png.svg';
+import looprGifSvg from './loopr.gif.svg';
 export {
 superdeskPngSvg,
 loopedGifSvg,
@@ -28,5 +29,6 @@ dragonsgiftsPngSvg,
 datawrapperGifSvg,
 spendingstoriesPngSvg,
 wikileaksPngSvg,
-brokenpromisesPngSvg
+brokenpromisesPngSvg,
+looprGifSvg,
 }
