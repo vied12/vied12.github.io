@@ -7,6 +7,7 @@ import detectiveGifSvg from './detective.gif.svg';
 import jeudinfluencesGifSvg from './jeudinfluences.gif.svg';
 import nost10YearsPngSvg from './nost10years.png.svg';
 import dragonsgiftsPngSvg from './dragonsgifts.png.svg';
+import resonate2014GifSvg from './resonate2014.gif.svg';
 import liveblogGifSvg from './liveblog.gif.svg';
 import energyGifSvg from './energy.gif.svg';
 import busGifSvg from './bus.gif.svg';
@@ -25,6 +26,7 @@ detectiveGifSvg,
 jeudinfluencesGifSvg,
 nost10YearsPngSvg,
 dragonsgiftsPngSvg,
+resonate2014GifSvg,
 liveblogGifSvg,
 energyGifSvg,
 busGifSvg,
