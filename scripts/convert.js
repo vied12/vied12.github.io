@@ -7,12 +7,14 @@ const camelCase = require('lodash/camelCase')
 const originDir = 'public/screenshots'
 const outputDir = 'src/assets/placeholder'
 
+const existingFiles = fs.readdirSync(outputDir).map(d => d.replace('.svg', ''))
 fs.readFile('./src/projects.tsv', 'utf8', (err, raw) => {
   const pictures = dsv.tsvParse(raw)
     .filter(p => p.isTool || p.isStoryTelling || p.isArt)
     .map(p => p.picture)
 
-  async.each(pictures, (file, cb) => {
+
+  async.each(pictures.filter(p => existingFiles.indexOf(p) === -1), (file, cb) => {
     execSync(`convert -verbose  "${originDir}/${file}[0]" /tmp/${file}`)
     const result = sqip({
       filename: `/tmp/${file}`,

@@ -16,6 +16,7 @@ import superdeskPngSvg from './superdesk.png.svg';
 import loopedGifSvg from './looped.gif.svg';
 import smogalarmJpgSvg from './smogalarm.jpg.svg';
 import tbGifSvg from './tb.gif.svg';
+import biastrackerJpgSvg from './biastracker.jpg.svg';
 export {
 brokenpromisesPngSvg,
 datawrapperGifSvg,
@@ -34,5 +35,6 @@ looprGifSvg,
 superdeskPngSvg,
 loopedGifSvg,
 smogalarmJpgSvg,
-tbGifSvg
+tbGifSvg,
+biastrackerJpgSvg
 }
