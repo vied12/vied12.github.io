@@ -5632,6 +5632,10 @@ react-jss@^7.1.0:
     prop-types "^15.5.8"
     theming "^1.1.0"
 
+react-lazyload@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.3.0.tgz#ccb134223012447074a96543954f44b055dc6185"
+
 react-popper@^0.7.2:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-0.7.3.tgz#fa2809a80fbe7ec516e9bac01d81bc47a8b5cd3b"

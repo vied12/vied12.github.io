@@ -15,7 +15,12 @@ fs.readFile('./src/projects.tsv', 'utf8', (err, raw) => {
 
 
   async.each(pictures.filter(p => existingFiles.indexOf(p) === -1), (file, cb) => {
-    execSync(`convert -verbose  "${originDir}/${file}[0]" /tmp/${file}`)
+    console.log(file)
+    if (file.indexOf('.webm') > -1) {
+      execSync(`ffmpeg  -i "${originDir}/${file}" -vframes 1 -q:v 2 /tmp/${file}`)
+    } else {
+      execSync(`convert -verbose  "${originDir}/${file}[0]" /tmp/${file}`)
+    }
     const result = sqip({
       filename: `/tmp/${file}`,
     })

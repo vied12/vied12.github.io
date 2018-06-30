@@ -7,6 +7,7 @@ import activeOnHover from '../helpers/activeOnHover'
 import preloadPicture from '../helpers/preloadPicture'
 import activeShortlyWhenVisible from '../helpers/activeShortlyWhenVisible'
 import compose from 'recompose/compose'
+import { lazyload } from 'react-lazyload'
 
 const styles = theme => ({
   root: {
@@ -61,12 +62,18 @@ const Project = ({ classes, project, active, picture, onClick }) => (
       [classes.hasLink]: !!project.link,
     })}
   >
-    <div
-      className={classes.background}
-      style={{backgroundImage: `url(${picture})`}}
-    />
+    {picture && picture.indexOf('webm') > -1 ?
+      <video className={classes.background} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay loop>
+        <source src={picture} type="video/webm" />
+      </video>
+    :
+      <div
+        className={classes.background}
+        style={{backgroundImage: `url(${picture})`}}
+      />
+    }
     <div className={classes.body}>
-      <Typography type="display2" id={project.name}>
+      <Typography type="display2">
         {project.name}
         <Typography type="body2">
           {project.tags.replace(/!/g, '').split('\n').map((item, key) => (
@@ -94,6 +101,7 @@ const Project = ({ classes, project, active, picture, onClick }) => (
 
 export default compose(
   withStyles(styles),
+  lazyload({height: 330, offset: 100, unmountIfInvisible: true}),
   preloadPicture,
   activeShortlyWhenVisible,
   activeOnHover,

@@ -11,6 +11,7 @@ import { orderBy, groupBy, intersection } from 'lodash'
 import Margin from './Margin'
 import Tags from './Tags'
 import classNames from 'classnames'
+import { forceCheck } from 'react-lazyload'
 
 const styles = theme => ({
   root: {
@@ -58,10 +59,10 @@ class RecentOutput extends React.Component {
     } else {
       selectedTags.push(tag)
     }
-    this.setState({ selectedTags })
+    this.setState({ selectedTags }, forceCheck)
   }
   clearTags = () => {
-    this.setState({ selectedTags: [] })
+    this.setState({ selectedTags: [] }, forceCheck)
   }
   render() {
     const { classes } = this.props
@@ -130,7 +131,7 @@ class RecentOutput extends React.Component {
                 spacing={24}
               >
                 {c.projects.map((p) => (
-                  <Grid item xs={12} sm={12} md={p.featured ? 12 : 6} key={p.name}>
+                  <Grid item xs={12} sm={12} md={p.featured ? 12 : 6} key={p.name}  id={p.name}>
                     <Project project={p} />
                   </Grid>
                 ))}
