@@ -17,6 +17,8 @@ import loopedGifSvg from './looped.gif.svg';
 import smogalarmJpgSvg from './smogalarm.jpg.svg';
 import tbGifSvg from './tb.gif.svg';
 import biastrackerJpgSvg from './biastracker.jpg.svg';
+import ishhhWebsiteWebmSvg from './ishhh-website.webm.svg';
+import ifopGifSvg from './ifop.gif.svg';
 export {
 brokenpromisesPngSvg,
 datawrapperGifSvg,
@@ -36,5 +38,7 @@ superdeskPngSvg,
 loopedGifSvg,
 smogalarmJpgSvg,
 tbGifSvg,
-biastrackerJpgSvg
+biastrackerJpgSvg,
+ishhhWebsiteWebmSvg,
+ifopGifSvg
 }

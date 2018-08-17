@@ -17,13 +17,17 @@ fs.readFile('./src/projects.tsv', 'utf8', (err, raw) => {
   async.each(pictures.filter(p => existingFiles.indexOf(p) === -1), (file, cb) => {
     console.log(file)
     if (file.indexOf('.webm') > -1) {
-      execSync(`ffmpeg  -i "${originDir}/${file}" -vframes 1 -q:v 2 /tmp/${file}`)
+      execSync(`ffmpeg  -i "${originDir}/${file}" -y -r 1/1 -vframes 1 /tmp/${file}.png`)
+      file = `${file}.png`
     } else {
       execSync(`convert -verbose  "${originDir}/${file}[0]" /tmp/${file}`)
     }
     const result = sqip({
       filename: `/tmp/${file}`,
     })
+    if (file.indexOf('.webm.png') > 0) {
+      file = file.replace('.webm.png', '.webm')
+    }
     fs.writeFile(`${outputDir}/${file}.svg`, result.final_svg, err => {
       if (err) {
         console.error(err)

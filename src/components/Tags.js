@@ -16,7 +16,7 @@ const Tags = ({ classes, tags, selectedTags, onClick }) => {
 
   return (
     <div className={classes.root}>
-      <Typography type="headline">Competences</Typography>
+      <Typography type="headline">Features</Typography>
       <div className={classes.tags}>
         {tags.map(p =>
           <Button
