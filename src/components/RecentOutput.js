@@ -83,7 +83,7 @@ class RecentOutput extends React.Component {
       },
       {
         title: 'Side Projects, Art & Whatever',
-        headline: 'are intended for learning something new, but mostly for having fun',
+        headline: 'are intended for learning something new, but ended up by having fun',
         projects: projects.filter(p => p.isArt),
       },
     ]
