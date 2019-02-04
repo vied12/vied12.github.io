@@ -22,6 +22,12 @@ const styles = theme => ({
     paddingTop: 30,
     paddingBottom: 40,
   },
+  titleContainer: {
+    // position: 'sticky',
+    // top: 0,
+    // backgroundColor: theme.palette.background.default,
+    // zIndex: 1,
+  },
   title: {
     textAlign: 'center',
     marginBottom: 60,
@@ -32,6 +38,9 @@ const styles = theme => ({
   },
   invisible: {
     opacity: 0,
+  },
+  item: {
+    overflow: 'hidden',
   },
 })
 
@@ -115,7 +124,7 @@ class RecentOutput extends React.Component {
             key={c.title}
             className={classes.categories}
           >
-            <Margin>
+            <Margin className={classes.titleContainer}>
               <Typography type="display1" className={classes.title}>
                 {c.title}
                 {c.headline &&
@@ -131,7 +140,7 @@ class RecentOutput extends React.Component {
                 spacing={24}
               >
                 {c.projects.map((p) => (
-                  <Grid item xs={12} sm={12} md={p.featured ? 12 : 6} key={p.name}  id={p.name}>
+                  <Grid item xs={12} sm={12} md={p.featured ? 12 : 6} key={p.name}  id={p.name} className={classes.item}>
                     <Project project={p} />
                   </Grid>
                 ))}
