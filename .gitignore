@@ -22,3 +22,4 @@ yarn-error.log*
 .env
 .~lock*
 .vscode/
+.next/

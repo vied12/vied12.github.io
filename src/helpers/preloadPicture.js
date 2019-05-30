@@ -1,30 +1,34 @@
 import React from 'react'
 import * as svg from '../assets/placeholder/index'
 import { camelCase } from 'lodash'
+import VisibilitySensor from 'react-visibility-sensor'
 
 const loadPicture = (Component) => (
   class LoadPicture extends React.Component {
       unmounted = false
+      state = {
+        loaded: false,
+        picture: undefined,
+      }
       constructor(props) {
       super(props)
-      if (props.project.picture.indexOf('webm') > -1) {
-        this.state = {
-          picture: `screenshots/${this.props.project.picture}`
-        }
-      } else {
-        this.preloadImage(props.project.picture)
+      // if (props.project.picture.indexOf('webm') > -1) {
+      //   this.state = {
+      //     picture: `/static/screenshots/${this.props.project.picture}`
+      //   }
+      // } else {
         this.state = {
           picture: svg[camelCase(this.props.project.picture + '.svg')],
         }
-        this.image = {}
-      }
+      // }
     }
     onImageLoaded = (imageName) => {
       if (this.unmounted) {
         return
       }
       this.setState({
-        picture: `screenshots/${this.props.project.picture}`
+        picture: `/static/screenshots/${this.props.project.picture}`,
+        loaded: true,
       })
     }
     componentWillUnmount = () => {
@@ -35,12 +39,22 @@ const loadPicture = (Component) => (
       }
     }
     preloadImage = (picture) => {
+      if (!process.browser) {
+        return null
+      }
       this.image = new Image()
       this.image.onload = () => this.onImageLoaded(picture)
-      this.image.src = `screenshots/${picture}`
+      this.image.src = `/static/screenshots/${picture}`
+    }
+    onChange = (isVisible) => {
+      if (isVisible && !this.state.loaded) {
+        this.preloadImage(this.props.project.picture)
+      }
     }
     render = () => (
-      <Component {...this.props} picture={this.state.picture} />
+      <VisibilitySensor onChange={this.onChange} minTopValue={120} partialVisibility>
+        <Component {...this.props} picture={this.state.picture} />
+        </VisibilitySensor>
     )
   }
 )

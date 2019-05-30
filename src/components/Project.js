@@ -1,13 +1,12 @@
 import React from 'react'
-import Typography from 'material-ui/Typography'
-import Button from 'material-ui/Button'
-import { withStyles } from 'material-ui/styles'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
+import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
 import activeOnHover from '../helpers/activeOnHover'
 import preloadPicture from '../helpers/preloadPicture'
 import activeShortlyWhenVisible from '../helpers/activeShortlyWhenVisible'
 import compose from 'recompose/compose'
-import { lazyload } from 'react-lazyload'
 
 const styles = theme => ({
   root: {
@@ -73,9 +72,9 @@ const Project = ({ classes, project, active, picture, onClick }) => (
       />
     }
     <div className={classes.body}>
-      <Typography type="display2">
+      <Typography variant="display2">
         {project.name}
-        <Typography type="body2">
+        <Typography variant="body2">
           {project.tags.replace(/!/g, '').split('\n').map((item, key) => (
             <span key={key}>{item}<br/></span>
           ))}
@@ -83,8 +82,11 @@ const Project = ({ classes, project, active, picture, onClick }) => (
       </Typography>
       <Typography
         className={classNames(classes.showOnHover)}
-        dangerouslySetInnerHTML={{__html: project.description.replace(/\n/g, '<br/>')}}
-      />
+      >
+      {project.description.replace(/!/g, '').split('\n').map((item, key) => (
+            <span key={key}>{item}<br/></span>
+          ))}
+      </Typography>
     </div>
     {project.link &&
       <Button
@@ -101,7 +103,6 @@ const Project = ({ classes, project, active, picture, onClick }) => (
 
 export default compose(
   withStyles(styles),
-  lazyload({height: 330, offset: 100, unmountIfInvisible: true}),
   preloadPicture,
   activeShortlyWhenVisible,
   activeOnHover,

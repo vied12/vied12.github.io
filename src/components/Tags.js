@@ -1,7 +1,7 @@
 import React from 'react'
-import Typography from 'material-ui/Typography'
-import Button from 'material-ui/Button'
-import { withStyles } from 'material-ui/styles'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
+import { withStyles } from '@material-ui/core/styles'
 
 const styles = theme => ({
   root: {
@@ -16,7 +16,7 @@ const Tags = ({ classes, tags, selectedTags, onClick }) => {
 
   return (
     <div className={classes.root}>
-      <Typography type="headline">Features</Typography>
+      <Typography variant="headline">Features</Typography>
       <div className={classes.tags}>
         {tags.map(p =>
           <Button

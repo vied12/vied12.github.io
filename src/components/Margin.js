@@ -1,7 +1,8 @@
 import React from 'react'
-import withWidth from 'material-ui/utils/withWidth'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
+// import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
+// import { useTheme } from '@material-ui/styles';
 
 const styles = theme => ({
   root: {
@@ -15,11 +16,13 @@ const styles = theme => ({
 class WithMargin extends React.Component {
 
   render() {
-    const { classes, className, width, disableOnMobile, ...props} = this.props
+    // const theme = useTheme();
+    // const matches = useMediaQuery(theme.breakpoints.up('sm'));
+    const { classes, className, disableOnMobile, ...props} = this.props
     return (
       <div className={classNames(className,
           {
-            [classes.root]: !(disableOnMobile && ['sm', 'xs'].indexOf(width) > -1),
+            [classes.root]: true,
           }
         )} {...props} />
     )
@@ -27,4 +30,4 @@ class WithMargin extends React.Component {
 
 }
 
-export default withWidth()(withStyles(styles)(WithMargin))
+export default withStyles(styles)(WithMargin)

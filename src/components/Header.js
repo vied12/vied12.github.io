@@ -1,13 +1,13 @@
 import React from 'react'
-import Typography from 'material-ui/Typography'
-import Button from 'material-ui/Button'
-import { withStyles } from 'material-ui/styles'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
+import { withStyles } from '@material-ui/core/styles'
 import { withDarkTheme } from '../themes'
 
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.default,
-    backgroundImage: 'url(screenshots/looped.gif)',
+    backgroundImage: 'url(/static/screenshots/looped.gif)',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
@@ -36,10 +36,10 @@ const styles = theme => ({
 const Header = ({ classes }) => (
   <header className={classes.root}>
     <div  className={classes.Box}>
-      <Typography gutterBottom type="display2" className={classes.text}>
+      <Typography gutterBottom variant="display2" className={classes.text}>
         Edouard Richard
       </Typography>
-      <Typography type="headline" component="span" className={classes.text}>
+      <Typography variant="headline" component="span" className={classes.text}>
         Freelance Developer
       </Typography>
       <Button href="#Jump" className={classes.caption}>

@@ -1,8 +1,8 @@
 import React from 'react'
-import Typography from 'material-ui/Typography'
-import Grid from 'material-ui/Grid'
-import Button from 'material-ui/Button'
-import { withStyles } from 'material-ui/styles'
+import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
+import Button from '@material-ui/core/Button'
+import { withStyles } from '@material-ui/core/styles'
 import { withDarkTheme } from '../themes'
 import Project from './Project'
 import projectsRaw from '../projects.tsv'
@@ -11,7 +11,6 @@ import { orderBy, groupBy, intersection } from 'lodash'
 import Margin from './Margin'
 import Tags from './Tags'
 import classNames from 'classnames'
-import { forceCheck } from 'react-lazyload'
 
 const styles = theme => ({
   root: {
@@ -46,8 +45,6 @@ const styles = theme => ({
 
 const PROJECTS = orderBy(tsvParse(projectsRaw), ['featured', 'year'], ['desc', 'desc'])
 
-
-
 const tags = orderBy(
   groupBy(
     [].concat(...PROJECTS.map(p => p.tags.split(', ').filter(p => !!p)))
@@ -68,10 +65,10 @@ class RecentOutput extends React.Component {
     } else {
       selectedTags.push(tag)
     }
-    this.setState({ selectedTags }, forceCheck)
+    this.setState({ selectedTags })
   }
   clearTags = () => {
-    this.setState({ selectedTags: [] }, forceCheck)
+    this.setState({ selectedTags: [] })
   }
   render() {
     const { classes } = this.props
@@ -99,7 +96,7 @@ class RecentOutput extends React.Component {
     return (
       <div className={classes.root}>
         <Margin>
-          <Typography type="display2">
+          <Typography variant="display2">
             Recent Output
           </Typography>
           <Typography>
@@ -125,10 +122,10 @@ class RecentOutput extends React.Component {
             className={classes.categories}
           >
             <Margin className={classes.titleContainer}>
-              <Typography type="display1" className={classes.title}>
+              <Typography variant="display1" className={classes.title}>
                 {c.title}
                 {c.headline &&
-                  <Typography type="caption" className={classes.title}>
+                  <Typography variant="caption" className={classes.title}>
                     {c.headline}
                   </Typography>
                 }

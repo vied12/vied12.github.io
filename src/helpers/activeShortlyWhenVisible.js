@@ -1,7 +1,7 @@
 import React from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
-import withWidth from 'material-ui/utils/withWidth'
-import isMobile from '../helpers/isMobile'
+import { useTheme } from '@material-ui/styles';
+import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 
 const activeShortlyWhenVisible = (Component) => {
   class ActiveShortlyWhenVisible extends React.Component {
@@ -17,10 +17,12 @@ const activeShortlyWhenVisible = (Component) => {
       }
     }
     render() {
-      const { active, width, ...other } = this.props
-      if (isMobile(width) === -1) {
-        return <Component active={active} {...other} />
-      }
+      const { active, ...other } = this.props
+      // const theme = useTheme();
+      // const matchesMobile = useMediaQuery(theme.breakpoints.down('sm'));
+      // if (matchesMobile) {
+      //   return <Component active={active} {...other} />
+      // }
       return (
         <VisibilitySensor onChange={this.onChange} minTopValue={120} partialVisibility>
           <Component
@@ -31,6 +33,6 @@ const activeShortlyWhenVisible = (Component) => {
       )
     }
   }
-  return withWidth()(ActiveShortlyWhenVisible)
+  return ActiveShortlyWhenVisible
 }
 export default activeShortlyWhenVisible
