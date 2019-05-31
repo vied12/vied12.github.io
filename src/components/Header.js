@@ -12,7 +12,9 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     textAlign: 'center',
-    padding: '60px',
+    [theme.breakpoints.up('md')]: {
+      padding: 60,
+    },
     position: 'relative',
     '&:hover $caption': {
       visibility: 'visible',
@@ -23,7 +25,10 @@ const useStyles = makeStyles(theme => ({
     // border: '3px solid white',
     margin: 'auto',
     maxWidth: theme.layout.maxWidth,
-    padding: 60,
+    padding: '60px 20px',
+    [theme.breakpoints.up('md')]: {
+      padding: 60,
+    },
     boxSizing: 'border-box',
   },
   caption: {
