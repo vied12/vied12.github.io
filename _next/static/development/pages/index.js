@@ -44532,7 +44532,7 @@ var Introduction = function Introduction() {
       lineNumber: 41
     },
     __self: this
-  }), "I'm a developer in Berlin. For the last few years I've built tools for news agencies at", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  }), "I'm a Web Application Engineer in Berlin. For the last few years I've built tools for news agencies at", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "https://sourcefabric.org",
     target: "_blank",
     rel: "noopener noreferrer",
