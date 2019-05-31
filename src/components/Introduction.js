@@ -16,7 +16,9 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     paddingTop: 40,
     '& > *': {
-      marginRight: 40,
+      [theme.breakpoints.up('md')]: {
+        marginRight: 40,
+      },
     },
     '& i': {
       fontSize: 30,
@@ -37,8 +39,8 @@ const Introduction = () => {
         <Typography className={classes.text}>
           Hi,
           <br />
-          I'm a developer in Berlin. For the last few years I've built tools for
-          news agencies at{' '}
+          I'm a web application engineer in Berlin. For the last few years I've
+          built tools for news agencies at{' '}
           <a
             href="https://sourcefabric.org"
             target="_blank"
@@ -66,11 +68,7 @@ const Introduction = () => {
           <Button href="https://github.com/vied12" target="_blank">
             <i className="fa fa-github" />
           </Button>
-          <Button
-            href="https://keybase.io/vied12"
-            target="_blank"
-            style={{ top: 5, position: 'relative' }}
-          >
+          <Button href="https://keybase.io/vied12" target="_blank">
             {false && <i className="fa fa-key" />}
             <KeyIcon style={{ width: 40, height: 35 }} />
           </Button>

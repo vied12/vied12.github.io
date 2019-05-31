@@ -1,5 +1,6 @@
 import React from 'react'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
+import purple from '@material-ui/core/colors/purple'
 
 const titleStyle = {
   fontFamily: 'Oswald,sans-serif,Arial',
@@ -8,6 +9,12 @@ const titleStyle = {
 const theme = {
   layout: {
     maxWidth: 1000,
+  },
+  palette: {
+    primary: {
+      ...purple,
+      [500]: '#9d7caa',
+    },
   },
   typography: {
     fontFamily: 'Inconsolata,monospace,Arial',

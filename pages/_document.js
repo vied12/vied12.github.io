@@ -4,6 +4,9 @@ import { ServerStyleSheets } from '@material-ui/styles'
 import flush from 'styled-jsx/server'
 import theme from '../src/themes'
 
+const description = "Hi, I'm a Web Application Engineer in Berlin."
+const title = 'Edouard Richard'
+
 class MyDocument extends Document {
   render() {
     return (
@@ -17,6 +20,19 @@ class MyDocument extends Document {
           />
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/static/favicon.ico"
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={title} />
+          <meta name="description" content={description} />
+          <meta property="og:description" content={description} />
+          <meta
+            property="og:image"
+            content="https://vied12.github.io/static/cover.png"
+          />
         </Head>
         <body>
           <Main />

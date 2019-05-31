@@ -54,7 +54,7 @@ const Header = () => {
           component="span"
           className={classes.text}
         >
-          Freelance Developer
+          Freelance Web Application Engineer
         </Typography>
         <Button href="#Jump" className={classes.caption}>
           Jump, electronic game I recently made
