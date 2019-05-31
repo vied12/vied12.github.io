@@ -15,36 +15,35 @@ const theme = {
       fontSize: 18,
       lineHeight: '26px',
     },
-    display1: titleStyle,
-    display2: titleStyle,
-    display3: titleStyle,
-    display4: titleStyle,
+    h1: titleStyle,
+    h2: titleStyle,
+    h3: titleStyle,
+    h4: titleStyle,
     title: titleStyle,
     headline: titleStyle,
   },
 }
 export const lightTheme = createMuiTheme(theme)
+export const noTheme = createMuiTheme()
 
 export const darkTheme = createMuiTheme({
   ...theme,
   palette: {
     ...theme.palette,
     type: 'dark',
-  }
+  },
 })
 
-export const withDarkTheme = (Component) => (
-  (props) => (
-    <MuiThemeProvider theme={darkTheme}>
-      <Component {...props} />
-    </MuiThemeProvider>
-  )
+export const withDarkTheme = Component => props => (
+  <MuiThemeProvider theme={darkTheme}>
+    <Component {...props} />
+  </MuiThemeProvider>
 )
 
-export const withLightTheme = (Component) => (
-  (props) => (
-    <MuiThemeProvider theme={lightTheme}>
-      <Component {...props} />
-    </MuiThemeProvider>
-  )
+export const withLightTheme = Component => props => (
+  <MuiThemeProvider theme={lightTheme}>
+    <Component {...props} />
+  </MuiThemeProvider>
 )
+
+export default lightTheme

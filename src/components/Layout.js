@@ -11,8 +11,8 @@ class Layout extends Component {
     const { classes } = this.props
     return (
       <div className={classes.root}>
-        <Header/>
-        <div className={classes.body} >
+        <Header />
+        <div className={classes.body}>
           <Introduction />
           <RecentOutput />
           <Footer />

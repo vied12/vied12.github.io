@@ -14,20 +14,19 @@ const styles = theme => ({
 })
 
 class WithMargin extends React.Component {
-
   render() {
     // const theme = useTheme();
     // const matches = useMediaQuery(theme.breakpoints.up('sm'));
-    const { classes, className, disableOnMobile, ...props} = this.props
+    const { classes, className, disableOnMobile, ...props } = this.props
     return (
-      <div className={classNames(className,
-          {
-            [classes.root]: true,
-          }
-        )} {...props} />
+      <div
+        className={classNames(className, {
+          [classes.root]: true,
+        })}
+        {...props}
+      />
     )
   }
-
 }
 
 export default withStyles(styles)(WithMargin)

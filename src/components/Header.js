@@ -1,10 +1,10 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
-import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 import { withDarkTheme } from '../themes'
 
-const styles = theme => ({
+const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.background.default,
     backgroundImage: 'url(/static/screenshots/looped.gif)',
@@ -16,8 +16,9 @@ const styles = theme => ({
     position: 'relative',
     '&:hover $caption': {
       visibility: 'visible',
-    }
+    },
   },
+  text: {},
   Box: {
     // border: '3px solid white',
     margin: 'auto',
@@ -31,22 +32,36 @@ const styles = theme => ({
     bottom: 0,
     fontSize: '1em',
     visibility: 'hidden',
-  }
-})
-const Header = ({ classes }) => (
-  <header className={classes.root}>
-    <div  className={classes.Box}>
-      <Typography gutterBottom variant="display2" className={classes.text}>
-        Edouard Richard
-      </Typography>
-      <Typography variant="headline" component="span" className={classes.text}>
-        Freelance Developer
-      </Typography>
-      <Button href="#Jump" className={classes.caption}>
-        Jump, electronic game I recently made
-      </Button>
-    </div>
-  </header>
-)
+  },
+}))
 
-export default withDarkTheme(withStyles(styles)(Header))
+const Header = () => {
+  const classes = useStyles()
+  return (
+    <header className={classes.root}>
+      <div className={classes.Box}>
+        <Typography
+          color="textPrimary"
+          gutterBottom
+          variant="h2"
+          className={classes.text}
+        >
+          Edouard Richard
+        </Typography>
+        <Typography
+          color="textPrimary"
+          variant="h4"
+          component="span"
+          className={classes.text}
+        >
+          Freelance Developer
+        </Typography>
+        <Button href="#Jump" className={classes.caption}>
+          Jump, electronic game I recently made
+        </Button>
+      </div>
+    </header>
+  )
+}
+
+export default withDarkTheme(Header)

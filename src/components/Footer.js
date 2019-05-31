@@ -7,14 +7,12 @@ const styles = {
   root: {
     paddingTop: 20,
     paddingBottom: 20,
-  }
+  },
 }
 const Footer = ({ classes }) => (
   <Margin>
     <footer className={classes.root}>
-      <Typography>
-        © {new Date().getFullYear()} Edouard Richard
-      </Typography>
+      <Typography>© {new Date().getFullYear()} Edouard Richard</Typography>
     </footer>
   </Margin>
 )

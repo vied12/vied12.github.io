@@ -1,33 +1,39 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
-import { withStyles } from '@material-ui/core/styles'
+import { withStyles } from '@material-ui/styles'
 
 const styles = theme => ({
   root: {
     margin: '40px 0 20px 0',
   },
   tags: {
-    textAlign: 'center',
+    // textAlign: 'center',
+  },
+  tag: {
+    marginRight: 12,
+    marginBottom: 12,
   },
 })
 
 const Tags = ({ classes, tags, selectedTags, onClick }) => {
-
   return (
     <div className={classes.root}>
-      <Typography variant="headline">Features</Typography>
+      <Typography variant="h6" color="textPrimary" gutterBottom>
+        Features
+      </Typography>
       <div className={classes.tags}>
-        {tags.map(p =>
+        {tags.map(p => (
           <Button
             key={p}
-            color={selectedTags.indexOf(p) > -1 ? 'accent' : 'default'}
+            variant="outlined"
+            color={selectedTags.indexOf(p) > -1 ? 'secondary' : 'default'}
             onClick={() => onClick(p)}
             className={classes.tag}
           >
             {p}
           </Button>
-        )}
+        ))}
       </div>
     </div>
   )

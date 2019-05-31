@@ -1,6 +1,6 @@
 import React from 'react'
 
-const activeOnHover = (Component) => (
+const activeOnHover = Component =>
   class ActiveOnHover extends React.Component {
     state = {
       active: false,
@@ -8,7 +8,7 @@ const activeOnHover = (Component) => (
 
     onMouseEnter = () => this.setState({ active: true })
     onMouseLeave = () => this.setState({ active: false })
-    onHashChange = (e) => {
+    onHashChange = e => {
       if (e.target.location.hash.slice(1) === this.props.project.name) {
         this.setState({ active: true })
       }
@@ -24,15 +24,11 @@ const activeOnHover = (Component) => (
       const { active, ...other } = this.props
       const shouldActive = active || this.state.active
       return (
-        <div
-          onMouseEnter={this.onMouseEnter}
-          onMouseLeave={this.onMouseLeave}
-        >
+        <div onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
           <Component active={shouldActive} {...other} />
         </div>
       )
     }
   }
-)
 
 export default activeOnHover
