@@ -2,4 +2,4 @@
 
 _Oct 2017_
 
-Presents myself and lists my recent works
+Presents my recent works
