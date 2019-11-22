@@ -46743,7 +46743,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NDIgMzM4Ij48ZmlsdGVyIGlkPSJiIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMiIgLz48L2ZpbHRlcj48cGF0aCBmaWxsPSIjNGQyZjY4IiBkPSJNMCAwaDk0MnYzMzRIMHoiLz48ZyBmaWx0ZXI9InVybCgjYikiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuOCAxLjgpIHNjYWxlKDMuNjc5NjkpIiBmaWxsLW9wYWNpdHk9Ii41Ij48ZWxsaXBzZSBmaWxsPSIjYzkyZWZmIiBjeD0iMjkiIGN5PSIzNyIgcng9IjUyIiByeT0iMjU1Ii8+PGVsbGlwc2UgZmlsbD0iIzE1MzAwMCIgY3g9IjE3NSIgY3k9IjMzIiByeD0iOTUiIHJ5PSIyNTUiLz48ZWxsaXBzZSBmaWxsPSIjOGMyZmZmIiBjeD0iMzgiIGN5PSI0MCIgcng9IjQyIiByeT0iMjM1Ii8+PGVsbGlwc2UgZmlsbD0iIzAzMGQxNCIgcng9IjEiIHJ5PSIxIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjAuOCA3My42IDY1LjcpIHNjYWxlKDI4LjUwMTU2IDIwLjQ1NDgzKSIvPjxlbGxpcHNlIGZpbGw9IiM1NjRiNDQiIHJ4PSIxIiByeT0iMSIgdHJhbnNmb3JtPSJyb3RhdGUoODYuNCA1Ny44IDE0OS44KSBzY2FsZSgzMS43OTUzNiA0Mi41NDg1OCkiLz48ZWxsaXBzZSBmaWxsPSIjNzE3NTc2IiBjeD0iMTE2IiBjeT0iMzgiIHJ4PSIzNSIgcnk9IjQiLz48cGF0aCBmaWxsPSIjNjI1NTQ4IiBkPSJNMTIzLjQtMjQuMkwxNDMuMSAxbC00Mi41IDMzLjJMODAuOSA5eiIvPjxwYXRoIGZpbGw9IiM3ZjJmMzQiIGQ9Ik0xNTAuOSA1OS4ybC0xOS40LTcuNS0xOC40IDE5LjggMTguNyA3LjZ6Ii8+PC9nPjwvc3ZnPg=="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1ODAgMjcyIj48ZmlsdGVyIGlkPSJiIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMiIgLz48L2ZpbHRlcj48cGF0aCBmaWxsPSIjNDMyYjU3IiBkPSJNMCAwaDU4MHYyNzFIMHoiLz48ZyBmaWx0ZXI9InVybCgjYikiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuMSAxLjEpIHNjYWxlKDIuMjY1NjMpIiBmaWxsLW9wYWNpdHk9Ii41Ij48ZWxsaXBzZSBmaWxsPSIjZmZmIiBjeD0iMTAxIiBjeT0iMyIgcng9IjI1NSIgcnk9IjkiLz48ZWxsaXBzZSBmaWxsPSIjMDAwMDA1IiBjeD0iMTk1IiBjeT0iNTgiIHJ4PSIxMzAiIHJ5PSI0NyIvPjxwYXRoIGZpbGw9IiNkZDRmZmYiIGQ9Ik0yNi4zIDEwNi41bDIyOS00IC40IDI5LTIyOSA0eiIvPjxlbGxpcHNlIGZpbGw9IiNmZmYiIGN4PSIxMzIiIGN5PSI1IiByeD0iMjU1IiByeT0iNyIvPjxlbGxpcHNlIGZpbGw9IiMwMDAyMDYiIHJ4PSIxIiByeT0iMSIgdHJhbnNmb3JtPSJtYXRyaXgoLjM2MjY3IDI1LjUxMzE3IC05MC43MTI5IDEuMjg5NDkgMCA4Mi40KSIvPjxlbGxpcHNlIGN4PSI2NyIgY3k9IjIyIiByeD0iMTU5IiByeT0iMTAiLz48cGF0aCBmaWxsPSIjOTI5NDk0IiBkPSJNMTQgNDRoOTV2MTVIMTR6Ii8+PGVsbGlwc2UgZmlsbD0iI2ZmZiIgY3g9IjE0NiIgY3k9IjEiIHJ4PSIyNTUiIHJ5PSIxMSIvPjwvZz48L3N2Zz4="
 
 /***/ }),
 
@@ -47123,11 +47123,11 @@ var Introduction = function Introduction() {
       lineNumber: 59
     },
     __self: this
-  }), "I now work as a freelancer."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }), "I now work as a freelancer and among other things, I'm conceiving a learning platform that uses music to teach general knowledge to kids and provide a pedagogic tool to teachers. You can check the M\xE9lo project for more information."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: classes.links,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 64
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -47135,14 +47135,14 @@ var Introduction = function Introduction() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-envelope-o",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 66
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -47150,14 +47150,14 @@ var Introduction = function Introduction() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 68
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 69
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -47165,14 +47165,14 @@ var Introduction = function Introduction() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 71
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 72
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -47180,7 +47180,7 @@ var Introduction = function Introduction() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 74
     },
     __self: this
   },  false && false, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_icons_VpnKey__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -47190,7 +47190,7 @@ var Introduction = function Introduction() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 76
     },
     __self: this
   })))));
@@ -47761,16 +47761,16 @@ function (_React$Component) {
         return Object(lodash__WEBPACK_IMPORTED_MODULE_17__["intersection"])(p.tags.split(', '), selectedTags).length > 0;
       });
       var categories = [{
+        title: 'Story Telling',
+        headline: 'encourage users to understand via exploration and intuition',
+        projects: projects.filter(function (p) {
+          return p.isStoryTelling;
+        })
+      }, {
         title: 'Tools',
         headline: 'face a problem and solve it',
         projects: projects.filter(function (p) {
           return p.isTool;
-        })
-      }, {
-        title: 'Story Telling',
-        headline: 'encourage people to understand via exploration and intuition',
-        projects: projects.filter(function (p) {
-          return p.isStoryTelling;
         })
       }, {
         title: 'Side Projects, Art & Whatever',
@@ -47783,13 +47783,13 @@ function (_React$Component) {
         className: classes.root,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 104
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_18__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -47797,14 +47797,14 @@ function (_React$Component) {
         color: "textPrimary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 106
         },
         __self: this
       }, "Recent Output"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
         color: "textPrimary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 109
         },
         __self: this
       }, "This is what I have been doing during this time"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Tags__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -47813,7 +47813,7 @@ function (_React$Component) {
         onClick: this.onTagClick,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 112
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -47822,7 +47822,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 117
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -47832,7 +47832,7 @@ function (_React$Component) {
         onClick: this.clearTags,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 118
         },
         __self: this
       }, "Clear all filters"))), categories.filter(function (c) {
@@ -47843,14 +47843,14 @@ function (_React$Component) {
           className: classes.categories,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 134
+            lineNumber: 133
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_18__["default"], {
           className: classes.titleContainer,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 135
+            lineNumber: 134
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -47859,7 +47859,7 @@ function (_React$Component) {
           className: classes.title,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 136
+            lineNumber: 135
           },
           __self: this
         }, c.title, c.headline && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -47868,14 +47868,14 @@ function (_React$Component) {
           color: "textPrimary",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 143
+            lineNumber: 142
           },
           __self: this
         }, c.headline))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_18__["default"], {
           disableOnMobile: true,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 153
+            lineNumber: 152
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -47883,7 +47883,7 @@ function (_React$Component) {
           spacing: 4,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 154
+            lineNumber: 153
           },
           __self: this
         }, c.projects.map(function (p) {
@@ -47897,14 +47897,14 @@ function (_React$Component) {
             className: classes.item,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 156
+              lineNumber: 155
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_14__["default"], {
             project: p,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 165
+              lineNumber: 164
             },
             __self: this
           }));
@@ -47914,7 +47914,8 @@ function (_React$Component) {
   }]);
 
   return RecentOutput;
-}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component); // export default withStyles(styles)(RecentOutput)
+
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_themes__WEBPACK_IMPORTED_MODULE_13__["withDarkTheme"])(Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_12__["withStyles"])(styles)(RecentOutput)));
 
@@ -48508,7 +48509,7 @@ var loadPicture = function loadPicture(Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("name\tdescription\tpicture\ttags\tyear\tlink\tisTool\tisStoryTelling\tisArt\tfeatured\nBroken Promises\tWhat should a journalist investigate today, according to what has been promised in the past?\tbrokenpromises.png\t!Jobs Runner, !Report System, Python, API\t1013\thttp://jplusplus.se/broken-promises-the-memory-you-lost-is-here/\tTRUE\t\t\t\nDatawrapper\tCreate charts and maps in seconds\tdatawrapper.gif\tD3.js, !Plugin System, Map, High Traffic, API, Data vis\t2013\thttps://www.datawrapper.de\tTRUE\t\t\t\nSpending Stories\tOrdered by the Open Knowledge Foundation it aims at improving fiscal literacy and providing greater awareness of budget data worldwide. It enables users to put amounts into perspective. The results take into account inflation in the country where the expenditure has been realized.\tspendingstories.png\tPython, Django, Data vis\t2013\thttp://spendingstories.org\tTRUE\t\t\t\nWikileaks\tUS, Australia isolated in TPP negotiations\twikileaks.png\tMap, D3.js, Data vis\t2013\thttps://wikileaks.org/US-Australia-isolated-in-TPP.html\t\tTRUE\t\t\nThe Migrant Files\t\"Winner of the Datajournalism Awards 2014.\nAn open database containing information about over 29,000 people who died on their way to Europe.\"\ttmf.jpg\t!Parser, !Bulk Upload, Neo4j\t2014\thttp://www.themigrantsfiles.com/\t\tTRUE\t\tTRUE\nDetective.io\tDetective.io is a platform that hosts your investigation and lets you make powerful queries to mine it. Simply describe your field of study and detective.io builds the input interface as well as a state-of-the-art front-end. \tdetective.gif\tNeo4j, Django, Angular.js, API, Data vis\t2014\t\tTRUE\t\t\t\nJeu d’influences\t\"Best cross-media piece at Liege Web Festival – 2014.\nHave you ever faced a communication crisis? Jeu d'influences puts you right in front of it.\"\tjeudinfluences.gif\t!Game saving system, !Optimization, Angular.js\t2014\thttp://jeu-d-influences.france5.fr/\t\tTRUE\t\t\nWorld of Work\t\"Ordered by Arte, World of Work is a survey that aims to measure the perception of the work by young Europeans and to compare their opinions with the ones of their  generations and older.\nThe project gathered more that 10 000 users.\"\twow.png\tHigh Traffic, Python, Django\t2014\t\t\t\t\t\nn-ost\tMap for the 10th anniversary of the EU-enlargement\tnost10years.png\tMap, Data vis\t2014\thttps://github.com/jplusplus/nost-10years\t\tTRUE\t\t\nDragons Gifts\tStart the tour and have a look at the Chinese projects in Africa, or explore the data and delve into the Chinese presence in the African continent.\tdragonsgifts.png\tMap, D3.js, Data vis\t2014\thttp://www.aljazeera.com/indepth/interactive/2014/03/interactive-china-african-spending-spree-2014320121349799136.html\t\tTRUE\t\t\nResonate 2014\tThey do not call themselves ‘artists’, but might be the future of art. We met the new-media art scene in Belgrade last week, at the Resonate festival.\tresonate2014.gif\tPython, Flask, Map\t2014\thttps://vied12.github.io/resonate2014/\t\tTRUE\t\t\nLiveblog\tSourcefabric's Live Blog is an open source web app that enables journalists to provide immediate and ongoing coverage on rapidly evolving news events.\tliveblog.gif\tPython, Flask, Angular.js, High Traffic, API\t2015\thttps://www.sourcefabric.org/en/liveblog/\tTRUE\t\t\t\nEnergy\tAn interactive infographic about energy for municipal decision-makers and city planning\tenergy.gif\tMap, Data vis\t2015\thttps://vied12.github.io/energy/\t\tTRUE\t\t\nBus Notifier\tDisplay the public transport departure time for a given station in a little box for your bathroom. Colored light induces the relative imminence of your commute. Push the buttons to navigate through the next departures.\tbus.gif\tElectronic, Welds, Raspberry Pi, Python, LED strip, API, Data vis\t2016\thttps://github.com/vied12/public-transport-notifier\t\t\tTRUE\t\nPillen\tThe colorimetric repository of little pills\tpillen.png\tAPI, Data vis, !Color detector\t2016\thttp://vied12.github.io/pillen/\t\t\t\t\nLoopr\t\"L8pr is an Internet Player.\nCreate your own channel made of YouTube videos, Soundcloud tracks illustrated with GIFs;\nadd your tweets and RSS to have a complete, multimedia, multi-content looping channel.\nMade with Benjamin Etco and love\"\tloopr.gif\tPython, API, React\t2016\thttps://l8pr.herokuapp.com\t\t\tTRUE\t\nSuperdesk\tContent creation, production, distribution, archiving and curation. Modular by design and developed continuously via partnerships with news organizations worldwide.\tsuperdesk.png\t!Plugin System, !Planning Component, Python, React, Angular.js, High Traffic, API\t2017\thttps://www.superdesk.org/\tTRUE\t\t\t\nJump\tYou are a pixel on the strip led and your controller is your phone. To survive you need to jump when the killer pixel comes to you. You can also fight back and send the killer in the other way.\tlooped.gif\tElectronic, LED strip, Raspberry Pi, Python, React, Welds\t2017\t\t\t\tTRUE\t\nSmog Alarm\tSmog Alarm is collecting the daily reports from the German Environmental Protection Agency who is measuring the air quality. This tool helps you to find your closest station and give you the possibility to track it by receiving Messenger messages, emails or RSS feeds. A messenger bot can help you to subscribe.\tsmogalarm.jpg\tMessenger Bot, Python, Django, D3.js, API, Map, Data vis\t2017\thttp://www.smogalarm.org\t\t\tTRUE\tTRUE\nTotalbalance\t\"Crypto Asset Manager\nGives an overview of your different crypto currencies which could come from many different kinds of wallets\"\ttb.gif\tReact, Crypto currencies, Firebase, D3.js, Data vis\t2018\thttps://app.totalbalance.io/\tTRUE\t\t\t\nBias Tracker\tBias Tracker extracts entities from Facebook posts and analyzes the sentiment related to them. Then it displays charts that reflects the bias from the sources regarding the entities.\tbiastracker.jpg\tDjango, React, GraphQL, !Jobs Runner, Data vis\t2018\thttps://medium.com/@dougiegyro/bias-tracker-understanding-sentiment-in-the-runup-to-the-italian-elections-ad390ced5d19\tTRUE\t\t\tTRUE\nISHHH\tCarmen released her new limited collection of kimonos, crop tops and and jeans jackets with Indian flavors\tishhh-website.webm\tReact, !Inventory management, !Gallery, !Payment\t2018\thttps://www.ishhh.de/\t\t\tTRUE\t\nIFOP\tThe French Institute of Public Opinion is an international polling and market research firm. I helped them by making data visualizations, and back offices that handle specific authentication systems and supports bulk data upload in order to let them ingest more data themselves.\tifop.gif\tPython, Django, React, API, D3.js, !Back-office, !Bulk Upload, Data vis\t2018\t\tTRUE\t\t\t\nMélo\tIn cooperation with Zebrock, we are building an educational platform that uses music and contemporary songs as a tool for teaching. Mélo embeds high quality pedagogic content, hundreds of biographies, instruments, styles, artists, a map to explore geographic content and a media player.\tmelo.webm\tPython, Django, Map, Elasticsearch, AWS, GraphQL\t2019\thttps://www.melo-app.com/\t\tTRUE\t\tTRUE\n");
+/* harmony default export */ __webpack_exports__["default"] = ("name\tdescription\tpicture\ttags\tyear\tlink\tisTool\tisStoryTelling\tisArt\tfeatured\nBroken Promises\tWhat should a journalist investigate today, according to what has been promised in the past?\tbrokenpromises.png\t!Jobs Runner, !Report System, Python, API\t1013\thttp://jplusplus.se/broken-promises-the-memory-you-lost-is-here/\tTRUE\t\t\t\nDatawrapper\tCreate charts and maps in seconds\tdatawrapper.gif\tD3.js, !Plugin System, Map, High Traffic, API, Data vis\t2013\thttps://www.datawrapper.de\tTRUE\t\t\t\nSpending Stories\tOrdered by the Open Knowledge Foundation it aims at improving fiscal literacy and providing greater awareness of budget data worldwide. It enables users to put amounts into perspective. The results take into account inflation in the country where the expenditure has been realized.\tspendingstories.png\tPython, Django, Data vis\t2013\thttp://spendingstories.org\tTRUE\t\t\t\nWikileaks\tUS, Australia isolated in TPP negotiations\twikileaks.png\tMap, D3.js, Data vis\t2013\thttps://wikileaks.org/US-Australia-isolated-in-TPP.html\t\tTRUE\t\t\nThe Migrant Files\t\"Winner of the Datajournalism Awards 2014.\nAn open database containing information about over 29,000 people who died on their way to Europe.\"\ttmf.jpg\t!Parser, !Bulk Upload, Neo4j\t2014\thttp://www.themigrantsfiles.com/\t\tTRUE\t\tTRUE\nDetective.io\tDetective.io is a platform that hosts your investigation and lets you make powerful queries to mine it. Simply describe your field of study and detective.io builds the input interface as well as a state-of-the-art front-end. \tdetective.gif\tNeo4j, Django, Angular.js, API, Data vis\t2014\t\tTRUE\t\t\t\nJeu d’influences\t\"Best cross-media piece at Liege Web Festival – 2014.\nHave you ever faced a communication crisis? Jeu d'influences puts you right in front of it.\"\tjeudinfluences.gif\t!Game saving system, !Optimization, Angular.js\t2014\thttp://jeu-d-influences.france5.fr/\t\tTRUE\t\t\nWorld of Work\t\"Ordered by Arte, World of Work is a survey that aims to measure the perception of the work by young Europeans and to compare their opinions with the ones of their  generations and older.\nThe project gathered more that 10 000 users.\"\twow.png\tHigh Traffic, Python, Django\t2014\t\t\t\t\t\nn-ost\tMap for the 10th anniversary of the EU-enlargement\tnost10years.png\tMap, Data vis\t2014\thttps://github.com/jplusplus/nost-10years\t\tTRUE\t\t\nDragons Gifts\tStart the tour and have a look at the Chinese projects in Africa, or explore the data and delve into the Chinese presence in the African continent.\tdragonsgifts.png\tMap, D3.js, Data vis\t2014\thttp://www.aljazeera.com/indepth/interactive/2014/03/interactive-china-african-spending-spree-2014320121349799136.html\t\tTRUE\t\t\nResonate 2014\tThey do not call themselves ‘artists’, but might be the future of art. We met the new-media art scene in Belgrade last week, at the Resonate festival.\tresonate2014.gif\tPython, Flask, Map\t2014\thttps://vied12.github.io/resonate2014/\t\tTRUE\t\t\nLiveblog\tSourcefabric's Live Blog is an open source web app that enables journalists to provide immediate and ongoing coverage on rapidly evolving news events.\tliveblog.gif\tPython, Flask, Angular.js, High Traffic, API\t2015\thttps://www.sourcefabric.org/en/liveblog/\tTRUE\t\t\t\nEnergy\tAn interactive infographic about energy for municipal decision-makers and city planning\tenergy.gif\tMap, Data vis\t2015\thttps://vied12.github.io/energy/\t\tTRUE\t\t\nBus Notifier\tDisplay the public transport departure time for a given station in a little box for your bathroom. Colored light induces the relative imminence of your commute. Push the buttons to navigate through the next departures.\tbus.gif\tElectronic, Welds, Raspberry Pi, Python, LED strip, API, Data vis\t2016\thttps://github.com/vied12/public-transport-notifier\t\t\tTRUE\t\nPillen\tThe colorimetric repository of little pills\tpillen.png\tAPI, Data vis, !Color detector\t2016\thttp://vied12.github.io/pillen/\t\t\t\t\nLoopr\t\"L8pr is an Internet Player.\nCreate your own channel made of YouTube videos, Soundcloud tracks illustrated with GIFs;\nadd your tweets and RSS to have a complete, multimedia, multi-content looping channel.\nMade with Benjamin Etco and love\"\tloopr.gif\tPython, API, React\t2016\thttps://l8pr.herokuapp.com\t\t\tTRUE\t\nSuperdesk\tContent creation, production, distribution, archiving and curation. Modular by design and developed continuously via partnerships with news organizations worldwide.\tsuperdesk.png\t!Plugin System, !Planning Component, Python, React, Angular.js, High Traffic, API\t2017\thttps://www.superdesk.org/\tTRUE\t\t\t\nMaster of the Ring\tMaster of the Ring is a game that offers the players to interact together with an unknown piece of shining hardware by using their intimate phones as a controller. This social experience forces the game to escape the screens and instead, to light up the physical space.\tlooped.gif\tElectronic, LED strip, Raspberry Pi, Python, React, Welds\t2017\t\t\t\tTRUE\t\nSmog Alarm\tSmog Alarm is collecting the daily reports from the German Environmental Protection Agency who is measuring the air quality. This tool helps you to find your closest station and give you the possibility to track it by receiving Messenger messages, emails or RSS feeds. A messenger bot can help you to subscribe.\tsmogalarm.jpg\tMessenger Bot, Python, Django, D3.js, API, Map, Data vis\t2017\thttp://www.smogalarm.org\t\t\tTRUE\tTRUE\nTotalbalance\t\"Crypto Asset Manager\nGives an overview of your different crypto currencies which could come from many different kinds of wallets\"\ttb.gif\tReact, Crypto currencies, Firebase, D3.js, Data vis\t2018\thttps://app.totalbalance.io/\tTRUE\t\t\t\nBias Tracker\tBias Tracker extracts entities from Facebook posts and analyzes the sentiment related to them. Then it displays charts that reflects the bias from the sources regarding the entities.\tbiastracker.jpg\tDjango, React, GraphQL, !Jobs Runner, Data vis\t2018\thttps://medium.com/@dougiegyro/bias-tracker-understanding-sentiment-in-the-runup-to-the-italian-elections-ad390ced5d19\tTRUE\t\t\tTRUE\nISHHH\tCarmen released her new limited collection of kimonos, crop tops and and jeans jackets with Indian flavors\tishhh-website.webm\tReact, !Inventory management, !Gallery, !Payment\t2018\thttps://www.ishhh.de/\t\t\tTRUE\t\nIFOP\tThe French Institute of Public Opinion is an international polling and market research firm. I helped them by making data visualizations, and back offices that handle specific authentication systems and supports bulk data upload in order to let them ingest more data themselves.\tifop.gif\tPython, Django, React, API, D3.js, !Back-office, !Bulk Upload, Data vis\t2018\t\tTRUE\t\t\t\nMélo\tIn cooperation with Zebrock, we are building an educational platform that uses music and contemporary songs as a tool for teaching. Mélo embeds high quality pedagogic content, hundreds of biographies, instruments, styles, artists, a map to explore geographic content and a media player.\tmelo.webm\tPython, Django, Map, Elasticsearch, AWS, GraphQL\t2019\thttps://www.melo-app.com/\t\tTRUE\t\tTRUE\n");
 
 /***/ }),
 
