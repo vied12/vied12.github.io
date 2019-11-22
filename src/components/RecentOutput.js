@@ -85,8 +85,7 @@ class RecentOutput extends React.Component {
     const categories = [
       {
         title: 'Story Telling',
-        headline:
-          'encourage people to understand via exploration and intuition',
+        headline: 'encourage users to understand via exploration and intuition',
         projects: projects.filter(p => p.isStoryTelling),
       },
       {

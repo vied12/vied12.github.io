@@ -56,7 +56,10 @@ const Introduction = () => {
           >
             Journalism++
           </a>
-          .<br />I now work as a freelancer.
+          .<br />I now work as a freelancer and among other things, I'm
+          conceiving a learning platform that uses music to teach general
+          knowledge to kids and provide a pedagogic tool to teachers. You can
+          check the Mélo project for more information.
         </Typography>
         <div className={classes.links}>
           <Button href="mailto:vied12@gmail.com" target="_blank">
