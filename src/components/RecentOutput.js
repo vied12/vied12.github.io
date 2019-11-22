@@ -84,15 +84,15 @@ class RecentOutput extends React.Component {
           )
     const categories = [
       {
-        title: 'Tools',
-        headline: 'face a problem and solve it',
-        projects: projects.filter(p => p.isTool),
-      },
-      {
         title: 'Story Telling',
         headline:
           'encourage people to understand via exploration and intuition',
         projects: projects.filter(p => p.isStoryTelling),
+      },
+      {
+        title: 'Tools',
+        headline: 'face a problem and solve it',
+        projects: projects.filter(p => p.isTool),
       },
       {
         title: 'Side Projects, Art & Whatever',
@@ -174,4 +174,5 @@ class RecentOutput extends React.Component {
   }
 }
 
+// export default withStyles(styles)(RecentOutput)
 export default withDarkTheme(withStyles(styles)(RecentOutput))
