@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/vied12
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://vied12.github.io
+  * I am vied12 (https://keybase.io/vied12) on keybase.
+  * I have a public key ASDJnx4XWinJ77b8SFxzJxcPSkmb8_oWe5jKfHvZBQWhVQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c99f1e175a29c9efb6fc485c7327170f4a499bf3fa167b98ca7c7bd90505a1550a",
+      "host": "keybase.io",
+      "kid": "0120c99f1e175a29c9efb6fc485c7327170f4a499bf3fa167b98ca7c7bd90505a1550a",
+      "uid": "126fac3035725d6dc1b7c74cd274fc19",
+      "username": "vied12"
+    },
+    "merkle_root": {
+      "ctime": 1565975556,
+      "hash": "48966f9fbc61ff278988cf72df3d2d8ce1b186411812e447668ab4bab1d4f61e0f936f051bea9a56c169fad01aaf431cd10afe5566b056a5fef356b7b37cca7c",
+      "hash_meta": "69e1899d8bcac49982b5e54587aa1c2593a4335e77ea71954ce8ac641d3c581a",
+      "seqno": 6031696
+    },
+    "service": {
+      "entropy": "1QByH/11RVpTGnSs6KoPBMZV",
+      "hostname": "vied12.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.3.1"
+  },
+  "ctime": 1565975574,
+  "expire_in": 504576000,
+  "prev": "23958298c92159c1e8468614a16523a6576b603a7de83d4020b11d37b97f10a6",
+  "seqno": 52,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyZ8eF1opye+2/EhccycXD0pJm/P6FnuYynx72QUFoVUKp3BheWxvYWTESpcCNMQgI5WCmMkhWcHoRoYUoWUjpldrYDp96D1AILEdN7l/EKbEIMG0YS4k2vInlWFZeWAam4pZteiLNqzi14QC7n2Lcb7zAgHCo3NpZ8RAnlr8Crq9vrW/wq+v0G70sH/F5IWAKT5xvdOK8RyG7NoDnb3btCCwDDgkf2oPpOFkv7xdRc3UNR0/Y2ToMV3eDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJqa6c4Ozs2a4gEpLz4b7W6u1o9SYQ46pFA1MhNlmGHOo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vied12
+
+==================================================================
