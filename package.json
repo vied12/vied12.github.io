@@ -10,7 +10,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "rm -rf node_modules/.cache && npm run build && next export && touch out/.nojekyll",
+    "export": "rm -rf node_modules/.cache && npm run build && next export && touch out/.nojekyll && cp keybase.txt out/",
     "deploy": "npm run export && node scripts/publish.js",
     "placeholders": "node scripts/convert.js"
   },
