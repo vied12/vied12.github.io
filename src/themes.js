@@ -26,6 +26,7 @@ const theme = {
     h2: titleStyle,
     h3: titleStyle,
     h4: titleStyle,
+    h5: titleStyle,
     title: titleStyle,
     headline: titleStyle,
   },

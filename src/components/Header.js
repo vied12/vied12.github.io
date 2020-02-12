@@ -61,8 +61,8 @@ const Header = () => {
         >
           Freelance Web Application Engineer
         </Typography>
-        <Button href="#Jump" className={classes.caption}>
-          Jump, electronic game I recently made
+        <Button href="#Master of the Ring" className={classes.caption}>
+          Master of the Ring, Game
         </Button>
       </div>
     </header>

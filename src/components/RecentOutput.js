@@ -2,6 +2,7 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
+import Box from '@material-ui/core/Box'
 import { withStyles } from '@material-ui/styles'
 import { withDarkTheme } from '../themes'
 import Project from './Project'
@@ -17,19 +18,9 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default,
     padding: '60px 0',
   },
-  categories: {
-    paddingTop: 30,
-    paddingBottom: 40,
-  },
-  titleContainer: {
-    // position: 'sticky',
-    // top: 0,
-    // backgroundColor: theme.palette.background.default,
-    // zIndex: 1,
-  },
+  categories: {},
   title: {
     textAlign: 'center',
-    marginBottom: 60,
   },
   clearFilters: {
     transition: 'all .5s',
@@ -114,7 +105,11 @@ class RecentOutput extends React.Component {
             selectedTags={selectedTags}
             onClick={this.onTagClick}
           />
-          <div style={{ textAlign: 'center' }}>
+        </Margin>
+        <div
+          style={{ textAlign: 'center', position: 'sticky', top: 0, zIndex: 2 }}
+        >
+          <Margin>
             <Button
               variant="contained"
               color="primary"
@@ -125,13 +120,13 @@ class RecentOutput extends React.Component {
             >
               Clear all filters
             </Button>
-          </div>
-        </Margin>
+          </Margin>
+        </div>
         {categories
           .filter(c => c.projects.length)
-          .map((c, i) => (
+          .map(c => (
             <div key={c.title} className={classes.categories}>
-              <Margin className={classes.titleContainer}>
+              <Margin>
                 <Typography
                   variant="h3"
                   color="textPrimary"
@@ -150,21 +145,11 @@ class RecentOutput extends React.Component {
                 </Typography>
               </Margin>
               <Margin disableOnMobile>
-                <Grid container spacing={4}>
-                  {c.projects.map(p => (
-                    <Grid
-                      item
-                      xs={12}
-                      sm={12}
-                      md={p.featured ? 12 : 6}
-                      key={p.name}
-                      id={p.name}
-                      className={classes.item}
-                    >
-                      <Project project={p} />
-                    </Grid>
-                  ))}
-                </Grid>
+                {c.projects.map((p, i) => (
+                  <Box key={p.name} id={p.name}>
+                    <Project project={p} />
+                  </Box>
+                ))}
               </Margin>
             </div>
           ))}

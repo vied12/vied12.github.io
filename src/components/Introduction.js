@@ -1,6 +1,7 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
+import Link from '@material-ui/core/Link'
 import { makeStyles } from '@material-ui/core/styles'
 import Margin from './Margin'
 import KeyIcon from '@material-ui/icons/VpnKey'
@@ -41,21 +42,23 @@ const Introduction = () => {
           <br />
           I'm a web application engineer in Berlin. For the last few years I've
           built tools for news agencies at{' '}
-          <a
+          <Link
             href="https://sourcefabric.org"
             target="_blank"
             rel="noopener noreferrer"
+            color="secondary"
           >
             Sourcefabric
-          </a>{' '}
+          </Link>{' '}
           after making interactive storytelling and data visualizations at{' '}
-          <a
+          <Link
             href="http://jplusplus.org"
             target="_blank"
             rel="noopener noreferrer"
+            color="secondary"
           >
             Journalism++
-          </a>
+          </Link>
           .<br />I now work as a freelancer and among other things, I'm
           conceiving a learning platform that uses music to teach general
           knowledge to kids and provide a pedagogic tool to teachers. You can
