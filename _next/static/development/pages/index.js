@@ -47873,38 +47873,6 @@ module.exports = (__webpack_require__(/*! dll-reference dll_9aaf654d4f8f592c0a05
 
 /***/ }),
 
-/***/ "./node_modules/recompose/compose.js":
-/*!*******************************************!*\
-  !*** ./node_modules/recompose/compose.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var compose = function compose() {
-  for (var _len = arguments.length, funcs = new Array(_len), _key = 0; _key < _len; _key++) {
-    funcs[_key] = arguments[_key];
-  }
-
-  return funcs.reduce(function (a, b) {
-    return function () {
-      return a(b.apply(void 0, arguments));
-    };
-  }, function (arg) {
-    return arg;
-  });
-};
-
-var _default = compose;
-exports.default = _default;
-
-/***/ }),
-
 /***/ "./node_modules/tiny-warning/dist/tiny-warning.esm.js":
 /*!************************************************************!*\
   !*** ./node_modules/tiny-warning/dist/tiny-warning.esm.js ***!
@@ -48609,12 +48577,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Margin__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Margin */ "./src/components/Margin.js");
 /* harmony import */ var _material_ui_icons_VpnKey__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/VpnKey */ "./node_modules/@material-ui/icons/VpnKey.js");
 /* harmony import */ var _material_ui_icons_VpnKey__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_VpnKey__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var recompose_compose__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! recompose/compose */ "./node_modules/recompose/compose.js");
-/* harmony import */ var recompose_compose__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(recompose_compose__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _themes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../themes */ "./src/themes.js");
+/* harmony import */ var _themes__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../themes */ "./src/themes.js");
 
 var _jsxFileName = "/home/edouard/work/vied12.github.io/src/components/Introduction.js";
-
 
 
 
@@ -48653,26 +48618,26 @@ var Introduction = function Introduction() {
     className: classes.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: this
   }, "Hi,", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }), "I'm a web application engineer in Berlin. For the last few years I've built tools for news agencies at", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -48682,7 +48647,7 @@ var Introduction = function Introduction() {
     color: "secondary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 44
     },
     __self: this
   }, "Sourcefabric"), ' ', "after making interactive storytelling and data visualizations at", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -48692,35 +48657,35 @@ var Introduction = function Introduction() {
     color: "secondary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 53
     },
     __self: this
   }, "Journalism++"), ".", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 61
     },
     __self: this
   }), "I now work as a freelancer and among other things, I'm conceiving a learning platform that uses music to teach general knowledge to kids and provide a pedagogic tool to teachers. You can check the M\xE9lo project for more information."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: classes.links,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "mailto:vied12@gmail.com",
+    href: "mailto:edou4rd@protonmail.com",
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 67
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-envelope-o",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 68
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -48728,14 +48693,14 @@ var Introduction = function Introduction() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 70
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 71
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -48743,14 +48708,14 @@ var Introduction = function Introduction() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 73
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 74
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -48758,7 +48723,7 @@ var Introduction = function Introduction() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 76
     },
     __self: this
   },  false && false, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_icons_VpnKey__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -48768,13 +48733,13 @@ var Introduction = function Introduction() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 78
     },
     __self: this
   })))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_themes__WEBPACK_IMPORTED_MODULE_9__["withLightTheme"])(Introduction));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_themes__WEBPACK_IMPORTED_MODULE_8__["withLightTheme"])(Introduction));
 
 /***/ }),
 
@@ -48798,7 +48763,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Header */ "./src/components/Header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
 /* harmony import */ var _RecentOutput__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./RecentOutput */ "./src/components/RecentOutput.js");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 
 
 
@@ -48810,11 +48774,6 @@ var _jsxFileName = "/home/edouard/work/vied12.github.io/src/components/Layout.js
 
 
 
-
-
-var styles = function styles(theme) {
-  return {};
-};
 
 var Layout =
 /*#__PURE__*/
@@ -48830,43 +48789,40 @@ function (_Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Layout, [{
     key: "render",
     value: function render() {
-      var classes = this.props.classes;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: classes.root,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 10
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 11
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: classes.body,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 12
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Introduction__WEBPACK_IMPORTED_MODULE_6__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 13
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_RecentOutput__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 14
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 15
         },
         __self: this
       })));
@@ -48876,7 +48832,7 @@ function (_Component) {
   return Layout;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_10__["withStyles"])(styles)(Layout));
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 /***/ }),
 
@@ -48913,8 +48869,7 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/home/edouard/work/vied12.github.io/src/components/Margin.js";
 
 
- // import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
-// import { useTheme } from '@material-ui/styles';
+
 
 var styles = function styles(theme) {
   return {
@@ -48941,8 +48896,7 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(WithMargin, [{
     key: "render",
     value: function render() {
-      // const theme = useTheme();
-      // const matches = useMediaQuery(theme.breakpoints.up('sm'));
+      // eslint-disable-next-line no-unused-vars
       var _this$props = this.props,
           classes = _this$props.classes,
           className = _this$props.className,
@@ -48954,7 +48908,7 @@ function (_React$Component) {
       }, props, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 19
         },
         __self: this
       }));
@@ -48984,9 +48938,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Box */ "./node_modules/@material-ui/core/esm/Box/index.js");
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _helpers_preloadPicture__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../helpers/preloadPicture */ "./src/helpers/preloadPicture.js");
+/* harmony import */ var _helpers_preloadPicture__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../helpers/preloadPicture */ "./src/helpers/preloadPicture.js");
 var _jsxFileName = "/home/edouard/work/vied12.github.io/src/components/Project.js";
 
 
@@ -48995,8 +48947,7 @@ var _jsxFileName = "/home/edouard/work/vied12.github.io/src/components/Project.j
 
 
 
-
-var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(function (theme) {
+var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(function () {
   return {
     artwork: {
       position: 'relative',
@@ -49019,21 +48970,20 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__["ma
 
 var Project2 = function Project2(_ref) {
   var project = _ref.project,
-      picture = _ref.picture,
-      flip = _ref.flip;
+      picture = _ref.picture;
   var classes = useStyles();
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     my: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
     container: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -49043,7 +48993,7 @@ var Project2 = function Project2(_ref) {
     className: classes.artwork,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: this
   }, picture && picture.indexOf('webm') > -1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
@@ -49057,7 +49007,7 @@ var Project2 = function Project2(_ref) {
     loop: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
@@ -49065,7 +49015,7 @@ var Project2 = function Project2(_ref) {
     type: "video/webm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 40
     },
     __self: this
   })) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -49075,7 +49025,7 @@ var Project2 = function Project2(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 43
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -49084,7 +49034,7 @@ var Project2 = function Project2(_ref) {
     md: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -49096,7 +49046,7 @@ var Project2 = function Project2(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -49105,7 +49055,7 @@ var Project2 = function Project2(_ref) {
     color: "textPrimary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 58
     },
     __self: this
   }, project.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -49113,7 +49063,7 @@ var Project2 = function Project2(_ref) {
     color: "textPrimary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 61
     },
     __self: this
   }, project.description.split('\n').map(function (item, key) {
@@ -49121,13 +49071,13 @@ var Project2 = function Project2(_ref) {
       key: key,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 63
       },
       __self: this
     }, item, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 65
       },
       __self: this
     }));
@@ -49137,14 +49087,14 @@ var Project2 = function Project2(_ref) {
     variant: "body2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 69
     },
     __self: this
   }, project.tags.replace(/!/g, '')), project.link && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     my: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 73
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -49155,7 +49105,7 @@ var Project2 = function Project2(_ref) {
     variant: "outlined",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 74
     },
     __self: this
   }, "Discover\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -49163,13 +49113,13 @@ var Project2 = function Project2(_ref) {
     "aria-hidden": "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 82
     },
     __self: this
   })))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_helpers_preloadPicture__WEBPACK_IMPORTED_MODULE_7__["default"])(Project2));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_helpers_preloadPicture__WEBPACK_IMPORTED_MODULE_6__["default"])(Project2));
 
 /***/ }),
 
@@ -49193,20 +49143,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
-/* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/Box */ "./node_modules/@material-ui/core/esm/Box/index.js");
-/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/styles */ "./node_modules/@material-ui/styles/esm/index.js");
-/* harmony import */ var _themes__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../themes */ "./src/themes.js");
-/* harmony import */ var _Project__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./Project */ "./src/components/Project.js");
-/* harmony import */ var _projects_tsv__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../projects.tsv */ "./src/projects.tsv");
-/* harmony import */ var d3_dsv__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! d3-dsv */ "./node_modules/d3-dsv/src/index.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _Margin__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./Margin */ "./src/components/Margin.js");
-/* harmony import */ var _Tags__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./Tags */ "./src/components/Tags.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Box */ "./node_modules/@material-ui/core/esm/Box/index.js");
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/styles */ "./node_modules/@material-ui/styles/esm/index.js");
+/* harmony import */ var _themes__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../themes */ "./src/themes.js");
+/* harmony import */ var _Project__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Project */ "./src/components/Project.js");
+/* harmony import */ var _projects_tsv__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../projects.tsv */ "./src/projects.tsv");
+/* harmony import */ var d3_dsv__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! d3-dsv */ "./node_modules/d3-dsv/src/index.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _Margin__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./Margin */ "./src/components/Margin.js");
+/* harmony import */ var _Tags__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./Tags */ "./src/components/Tags.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_20__);
 
 
 
@@ -49218,7 +49167,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var _ref,
     _jsxFileName = "/home/edouard/work/vied12.github.io/src/components/RecentOutput.js";
-
 
 
 
@@ -49257,8 +49205,8 @@ var styles = function styles(theme) {
   };
 };
 
-var PROJECTS = Object(lodash__WEBPACK_IMPORTED_MODULE_18__["orderBy"])(Object(d3_dsv__WEBPACK_IMPORTED_MODULE_17__["tsvParse"])(_projects_tsv__WEBPACK_IMPORTED_MODULE_16__["default"]), ['featured', 'year'], ['desc', 'desc']);
-var tags = Object(lodash__WEBPACK_IMPORTED_MODULE_18__["orderBy"])(Object(lodash__WEBPACK_IMPORTED_MODULE_18__["groupBy"])((_ref = []).concat.apply(_ref, Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_7__["default"])(PROJECTS.map(function (p) {
+var PROJECTS = Object(lodash__WEBPACK_IMPORTED_MODULE_17__["orderBy"])(Object(d3_dsv__WEBPACK_IMPORTED_MODULE_16__["tsvParse"])(_projects_tsv__WEBPACK_IMPORTED_MODULE_15__["default"]), ['featured', 'year'], ['desc', 'desc']);
+var tags = Object(lodash__WEBPACK_IMPORTED_MODULE_17__["orderBy"])(Object(lodash__WEBPACK_IMPORTED_MODULE_17__["groupBy"])((_ref = []).concat.apply(_ref, Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_7__["default"])(PROJECTS.map(function (p) {
   return p.tags.split(', ').filter(function (p) {
     return !!p;
   });
@@ -49319,7 +49267,7 @@ function (_React$Component) {
       var classes = this.props.classes;
       var selectedTags = this.state.selectedTags;
       var projects = selectedTags.length === 0 ? PROJECTS : Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_7__["default"])(PROJECTS).filter(function (p) {
-        return Object(lodash__WEBPACK_IMPORTED_MODULE_18__["intersection"])(p.tags.split(', '), selectedTags).length > 0;
+        return Object(lodash__WEBPACK_IMPORTED_MODULE_17__["intersection"])(p.tags.split(', '), selectedTags).length > 0;
       });
       var categories = [{
         title: 'Story Telling',
@@ -49344,13 +49292,13 @@ function (_React$Component) {
         className: classes.root,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 94
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_19__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_18__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -49358,23 +49306,23 @@ function (_React$Component) {
         color: "textPrimary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 96
         },
         __self: this
       }, "Recent Output"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
         color: "textPrimary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 99
         },
         __self: this
-      }, "This is what I have been doing during this time"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Tags__WEBPACK_IMPORTED_MODULE_20__["default"], {
+      }, "This is what I have been doing during this time"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Tags__WEBPACK_IMPORTED_MODULE_19__["default"], {
         tags: tags,
         selectedTags: selectedTags,
         onClick: this.onTagClick,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 102
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -49386,23 +49334,23 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 108
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_19__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_18__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 111
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_10__["default"], {
         variant: "contained",
         color: "primary",
-        className: classnames__WEBPACK_IMPORTED_MODULE_21___default()(classes.clearFilters, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])({}, classes.invisible, selectedTags.length === 0)),
+        className: classnames__WEBPACK_IMPORTED_MODULE_20___default()(classes.clearFilters, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])({}, classes.invisible, selectedTags.length === 0)),
         onClick: this.clearTags,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 112
         },
         __self: this
       }, "Clear all filters"))), categories.filter(function (c) {
@@ -49413,13 +49361,13 @@ function (_React$Component) {
           className: classes.categories,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 128
+            lineNumber: 127
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_19__["default"], {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_18__["default"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 129
+            lineNumber: 128
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -49428,7 +49376,7 @@ function (_React$Component) {
           className: classes.title,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 130
+            lineNumber: 129
           },
           __self: this
         }, c.title, c.headline && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -49437,30 +49385,30 @@ function (_React$Component) {
           color: "textPrimary",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 137
+            lineNumber: 136
           },
           __self: this
-        }, c.headline))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_19__["default"], {
+        }, c.headline))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Margin__WEBPACK_IMPORTED_MODULE_18__["default"], {
           disableOnMobile: true,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 147
+            lineNumber: 146
           },
           __self: this
-        }, c.projects.map(function (p, i) {
-          return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        }, c.projects.map(function (p) {
+          return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_11__["default"], {
             key: p.name,
             id: p.name,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 149
+              lineNumber: 148
             },
             __self: this
-          }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_15__["default"], {
+          }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_14__["default"], {
             project: p,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 150
+              lineNumber: 149
             },
             __self: this
           }));
@@ -49470,10 +49418,9 @@ function (_React$Component) {
   }]);
 
   return RecentOutput;
-}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component); // export default withStyles(styles)(RecentOutput)
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(_themes__WEBPACK_IMPORTED_MODULE_14__["withDarkTheme"])(Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_13__["withStyles"])(styles)(RecentOutput)));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_themes__WEBPACK_IMPORTED_MODULE_13__["withDarkTheme"])(Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_12__["withStyles"])(styles)(RecentOutput)));
 
 /***/ }),
 
@@ -49508,7 +49455,7 @@ var _jsxFileName = "/home/edouard/work/vied12.github.io/src/components/Tags.js";
 
 
 
-var styles = function styles(theme) {
+var styles = function styles() {
   return {
     root: {
       margin: '40px 0 20px 0'
@@ -49535,7 +49482,7 @@ var RenderTags = function RenderTags(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }, tags.slice(3).map(function (p) {
@@ -49549,7 +49496,7 @@ var RenderTags = function RenderTags(_ref) {
       className: classes.tag,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 32
       },
       __self: this
     }, p);
@@ -49565,14 +49512,14 @@ var Tags = function Tags(_ref2) {
     className: classes.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_8__["default"], {
     xsDown: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -49581,14 +49528,14 @@ var Tags = function Tags(_ref2) {
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: this
   }, "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.tags,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RenderTags, {
@@ -49597,27 +49544,27 @@ var Tags = function Tags(_ref2) {
     onClick: onClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_8__["default"], {
     smUp: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ExpansionPanel__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ExpansionPanelSummary__WEBPACK_IMPORTED_MODULE_5__["default"], {
     expandIcon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_7___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 64
       },
       __self: this
     }),
@@ -49628,13 +49575,13 @@ var Tags = function Tags(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 69
     },
     __self: this
   }, "Filter by feature")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ExpansionPanelDetails__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -49643,7 +49590,7 @@ var Tags = function Tags(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RenderTags, {
@@ -49652,7 +49599,7 @@ var Tags = function Tags(_ref2) {
     onClick: onClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: this
   })))));
@@ -49722,7 +49669,7 @@ var loadPicture = function loadPicture(Component) {
           picture: undefined
         });
 
-        Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "onImageLoaded", function (imageName) {
+        Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "onImageLoaded", function () {
           if (_this.unmounted) {
             return;
           }
@@ -49774,20 +49721,21 @@ var loadPicture = function loadPicture(Component) {
             partialVisibility: true,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 62
+              lineNumber: 63
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _this.props, {
             picture: _this.state.picture,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 67
+              lineNumber: 68
             },
             __self: this
           })));
         });
 
         _this.state = {
+          // eslint-disable-next-line import/namespace
           picture: _assets_placeholder_index__WEBPACK_IMPORTED_MODULE_8__[Object(lodash__WEBPACK_IMPORTED_MODULE_9__["camelCase"])(_this.props.project.picture + '.svg')] // }
 
         };
