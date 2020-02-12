@@ -65,7 +65,7 @@ const Introduction = () => {
           check the Mélo project for more information.
         </Typography>
         <div className={classes.links}>
-          <Button href="mailto:vied12@gmail.com" target="_blank">
+          <Button href="mailto:edou4rd@protonmail.com" target="_blank">
             <i className="fa fa-envelope-o" />
           </Button>
           <Button href="https://twitter.com/vied12" target="_blank">
