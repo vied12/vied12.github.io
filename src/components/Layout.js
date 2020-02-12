@@ -3,16 +3,13 @@ import Introduction from './Introduction'
 import Header from './Header'
 import Footer from './Footer'
 import RecentOutput from './RecentOutput'
-import { withStyles } from '@material-ui/core/styles'
 
-const styles = theme => ({})
 class Layout extends Component {
   render() {
-    const { classes } = this.props
     return (
-      <div className={classes.root}>
+      <div>
         <Header />
-        <div className={classes.body}>
+        <div>
           <Introduction />
           <RecentOutput />
           <Footer />
@@ -22,4 +19,4 @@ class Layout extends Component {
   }
 }
 
-export default withStyles(styles)(Layout)
+export default Layout

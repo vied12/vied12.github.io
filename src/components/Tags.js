@@ -7,7 +7,8 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Hidden from '@material-ui/core/Hidden'
-const styles = theme => ({
+
+const styles = () => ({
   root: {
     margin: '40px 0 20px 0',
   },

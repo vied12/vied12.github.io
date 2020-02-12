@@ -1,8 +1,6 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
-// import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
-// import { useTheme } from '@material-ui/styles';
 
 const styles = theme => ({
   root: {
@@ -15,8 +13,7 @@ const styles = theme => ({
 
 class WithMargin extends React.Component {
   render() {
-    // const theme = useTheme();
-    // const matches = useMediaQuery(theme.breakpoints.up('sm'));
+    // eslint-disable-next-line no-unused-vars
     const { classes, className, disableOnMobile, ...props } = this.props
     return (
       <div

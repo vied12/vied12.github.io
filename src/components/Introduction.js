@@ -5,7 +5,6 @@ import Link from '@material-ui/core/Link'
 import { makeStyles } from '@material-ui/core/styles'
 import Margin from './Margin'
 import KeyIcon from '@material-ui/icons/VpnKey'
-import compose from 'recompose/compose'
 import { withLightTheme } from '../themes'
 
 const useStyles = makeStyles(theme => ({
@@ -40,8 +39,8 @@ const Introduction = () => {
         <Typography className={classes.text}>
           Hi,
           <br />
-          I'm a web application engineer in Berlin. For the last few years I've
-          built tools for news agencies at{' '}
+          I&apos;m a web application engineer in Berlin. For the last few years
+          I&apos;ve built tools for news agencies at{' '}
           <Link
             href="https://sourcefabric.org"
             target="_blank"
@@ -59,7 +58,7 @@ const Introduction = () => {
           >
             Journalism++
           </Link>
-          .<br />I now work as a freelancer and among other things, I'm
+          .<br />I now work as a freelancer and among other things, I&apos;m
           conceiving a learning platform that uses music to teach general
           knowledge to kids and provide a pedagogic tool to teachers. You can
           check the Mélo project for more information.

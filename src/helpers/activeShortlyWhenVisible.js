@@ -1,7 +1,5 @@
 import React from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
-import { useTheme } from '@material-ui/styles'
-import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 
 const activeShortlyWhenVisible = Component => {
   class ActiveShortlyWhenVisible extends React.Component {
@@ -16,6 +14,7 @@ const activeShortlyWhenVisible = Component => {
       }
     }
     render() {
+      // eslint-disable-next-line no-unused-vars
       const { active, ...other } = this.props
       // const theme = useTheme();
       // const matchesMobile = useMediaQuery(theme.breakpoints.down('sm'));

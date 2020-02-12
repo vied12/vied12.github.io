@@ -1,6 +1,5 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
-import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import Box from '@material-ui/core/Box'
 import { withStyles } from '@material-ui/styles'
@@ -145,7 +144,7 @@ class RecentOutput extends React.Component {
                 </Typography>
               </Margin>
               <Margin disableOnMobile>
-                {c.projects.map((p, i) => (
+                {c.projects.map(p => (
                   <Box key={p.name} id={p.name}>
                     <Project project={p} />
                   </Box>
@@ -158,5 +157,4 @@ class RecentOutput extends React.Component {
   }
 }
 
-// export default withStyles(styles)(RecentOutput)
 export default withDarkTheme(withStyles(styles)(RecentOutput))

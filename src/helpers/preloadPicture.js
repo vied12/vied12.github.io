@@ -18,11 +18,12 @@ const loadPicture = Component =>
       //   }
       // } else {
       this.state = {
+        // eslint-disable-next-line import/namespace
         picture: svg[camelCase(this.props.project.picture + '.svg')],
       }
       // }
     }
-    onImageLoaded = imageName => {
+    onImageLoaded = () => {
       if (this.unmounted) {
         return
       }
