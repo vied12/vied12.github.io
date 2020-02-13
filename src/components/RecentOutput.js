@@ -19,7 +19,9 @@ const styles = theme => ({
   },
   categories: {},
   title: {
-    textAlign: 'center',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+    },
   },
   clearFilters: {
     transition: 'all .5s',
