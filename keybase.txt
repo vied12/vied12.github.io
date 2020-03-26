@@ -1,3 +1,15 @@
+==================================================================
+https://keybase.io/vied12
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.rchrd.eu
+  * I am vied12 (https://keybase.io/vied12) on keybase.
+  * I have a public key ASDJnx4XWinJ77b8SFxzJxcPSkmb8_oWe5jKfHvZBQWhVQo
+
+To do so, I am signing this object:
+
 {
   "body": {
     "key": {
@@ -8,13 +20,13 @@
       "username": "vied12"
     },
     "merkle_root": {
-      "ctime": 1585256081,
-      "hash": "5a46762f53010c09e298a106ccf20d733bd9d57fc8019e775a515772e9d342639a81d8b0b3dc467d6e1832f4d8324686acd8e0d9f61cf1e4f8d87e267d4fa2e6",
-      "hash_meta": "7c4b1a172d6dbcbc8b483b2d7260bea6aa2461a0af6da6070ca90db37737964a",
-      "seqno": 15635938
+      "ctime": 1585256300,
+      "hash": "12d1f6c8d31c45a72d91ddb965e2bf07250d39a8835d65093bc7f7ff1e2a6768852e5e5267bc484543422e195cdab70de77506d52a514cd4ce43872e73155b91",
+      "hash_meta": "bbc32dba2fdb5fcb5a3339731e55e9c00be580bef06a36dd4c005ed071451942",
+      "seqno": 15636072
     },
     "service": {
-      "entropy": "qsbXrljHCAgXMMQGh22x72mT",
+      "entropy": "p3Rimvkag/2gh65YKClHrhTS",
       "hostname": "www.rchrd.eu",
       "protocol": "https:"
     },
@@ -25,9 +37,20 @@
     "name": "keybase.io go client",
     "version": "5.3.1"
   },
-  "ctime": 1585256093,
+  "ctime": 1585256310,
   "expire_in": 504576000,
-  "prev": "6d6d4a7c0c3aa944c0854b5f96348e90f093e2d67ec38beb8b4a7363f2307855",
-  "seqno": 60,
+  "prev": "366ae94daa83a24b24ff6baa96d82a70d1f2d31e6ba1fa31ba84686eb6b9de0a",
+  "seqno": 62,
   "tag": "signature"
 }
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyZ8eF1opye+2/EhccycXD0pJm/P6FnuYynx72QUFoVUKp3BheWxvYWTESpcCPsQgNmrpTaqDoksk/2uqltgqcNHy0x5rofoxuoRobra53grEIJ9Yif/TeeiINFIqYkjgwKkTxQbVMYfvaLSfR5IAse6sAgHCo3NpZ8RAAUnOV5UvpYBMz6RjRfGjFrljUpj8pr6lY5xIDkYSBi0c39XN3bnmy0+Lx2lfO3SX8v6CbxN1Fh1eKeOOyUwmD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOfILjk6n3QLNLi3p0EUIvOMTQSiPKQh1bfSpuV4P3cgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vied12
+
+==================================================================
