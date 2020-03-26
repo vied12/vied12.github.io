@@ -1,15 +1,3 @@
-==================================================================
-https://keybase.io/vied12
---------------------------------------------------------------------
-
-I hereby claim:
-
-  * I am an admin of https://vied12.github.io
-  * I am vied12 (https://keybase.io/vied12) on keybase.
-  * I have a public key ASDJnx4XWinJ77b8SFxzJxcPSkmb8_oWe5jKfHvZBQWhVQo
-
-To do so, I am signing this object:
-
 {
   "body": {
     "key": {
@@ -20,14 +8,14 @@ To do so, I am signing this object:
       "username": "vied12"
     },
     "merkle_root": {
-      "ctime": 1565975556,
-      "hash": "48966f9fbc61ff278988cf72df3d2d8ce1b186411812e447668ab4bab1d4f61e0f936f051bea9a56c169fad01aaf431cd10afe5566b056a5fef356b7b37cca7c",
-      "hash_meta": "69e1899d8bcac49982b5e54587aa1c2593a4335e77ea71954ce8ac641d3c581a",
-      "seqno": 6031696
+      "ctime": 1585256081,
+      "hash": "5a46762f53010c09e298a106ccf20d733bd9d57fc8019e775a515772e9d342639a81d8b0b3dc467d6e1832f4d8324686acd8e0d9f61cf1e4f8d87e267d4fa2e6",
+      "hash_meta": "7c4b1a172d6dbcbc8b483b2d7260bea6aa2461a0af6da6070ca90db37737964a",
+      "seqno": 15635938
     },
     "service": {
-      "entropy": "1QByH/11RVpTGnSs6KoPBMZV",
-      "hostname": "vied12.github.io",
+      "entropy": "qsbXrljHCAgXMMQGh22x72mT",
+      "hostname": "www.rchrd.eu",
       "protocol": "https:"
     },
     "type": "web_service_binding",
@@ -35,22 +23,11 @@ To do so, I am signing this object:
   },
   "client": {
     "name": "keybase.io go client",
-    "version": "4.3.1"
+    "version": "5.3.1"
   },
-  "ctime": 1565975574,
+  "ctime": 1585256093,
   "expire_in": 504576000,
-  "prev": "23958298c92159c1e8468614a16523a6576b603a7de83d4020b11d37b97f10a6",
-  "seqno": 52,
+  "prev": "6d6d4a7c0c3aa944c0854b5f96348e90f093e2d67ec38beb8b4a7363f2307855",
+  "seqno": 60,
   "tag": "signature"
 }
-
-which yields the signature:
-
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyZ8eF1opye+2/EhccycXD0pJm/P6FnuYynx72QUFoVUKp3BheWxvYWTESpcCNMQgI5WCmMkhWcHoRoYUoWUjpldrYDp96D1AILEdN7l/EKbEIMG0YS4k2vInlWFZeWAam4pZteiLNqzi14QC7n2Lcb7zAgHCo3NpZ8RAnlr8Crq9vrW/wq+v0G70sH/F5IWAKT5xvdOK8RyG7NoDnb3btCCwDDgkf2oPpOFkv7xdRc3UNR0/Y2ToMV3eDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJqa6c4Ozs2a4gEpLz4b7W6u1o9SYQ46pFA1MhNlmGHOo3RhZ80CAqd2ZXJzaW9uAQ==
-
-And finally, I am proving ownership of this host by posting or
-appending to this document.
-
-View my publicly-auditable identity here: https://keybase.io/vied12
-
-==================================================================
