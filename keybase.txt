@@ -4,7 +4,7 @@ https://keybase.io/vied12
 
 I hereby claim:
 
-  * I am an admin of https://www.rchrd.eu
+  * I am an admin of http://www.edri.fr
   * I am vied12 (https://keybase.io/vied12) on keybase.
   * I have a public key ASDJnx4XWinJ77b8SFxzJxcPSkmb8_oWe5jKfHvZBQWhVQo
 
@@ -20,15 +20,15 @@ To do so, I am signing this object:
       "username": "vied12"
     },
     "merkle_root": {
-      "ctime": 1585256300,
-      "hash": "12d1f6c8d31c45a72d91ddb965e2bf07250d39a8835d65093bc7f7ff1e2a6768852e5e5267bc484543422e195cdab70de77506d52a514cd4ce43872e73155b91",
-      "hash_meta": "bbc32dba2fdb5fcb5a3339731e55e9c00be580bef06a36dd4c005ed071451942",
-      "seqno": 15636072
+      "ctime": 1585351219,
+      "hash": "142247d3d1dce4a330bdeef249fff0b65320cddf47203626af7eb5c48bf640fc8c57f6ebebda5d2cc1ef0f14643a4b23fcbf1bfc40eab1104141acf58a34475f",
+      "hash_meta": "1f2838f2accd5d7e348b08e82c991094ad930750934663c49b534c238910f1ff",
+      "seqno": 15650938
     },
     "service": {
-      "entropy": "p3Rimvkag/2gh65YKClHrhTS",
-      "hostname": "www.rchrd.eu",
-      "protocol": "https:"
+      "entropy": "3ARAbq3xuDVytSBBjTniFHre",
+      "hostname": "www.edri.fr",
+      "protocol": "http:"
     },
     "type": "web_service_binding",
     "version": 2
@@ -37,16 +37,16 @@ To do so, I am signing this object:
     "name": "keybase.io go client",
     "version": "5.3.1"
   },
-  "ctime": 1585256310,
+  "ctime": 1585351227,
   "expire_in": 504576000,
-  "prev": "366ae94daa83a24b24ff6baa96d82a70d1f2d31e6ba1fa31ba84686eb6b9de0a",
-  "seqno": 62,
+  "prev": "e0e8745e7b90d43da292ec5a9ff27f1719f8e4df3f45bb12650d3442b861132a",
+  "seqno": 64,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyZ8eF1opye+2/EhccycXD0pJm/P6FnuYynx72QUFoVUKp3BheWxvYWTESpcCPsQgNmrpTaqDoksk/2uqltgqcNHy0x5rofoxuoRobra53grEIJ9Yif/TeeiINFIqYkjgwKkTxQbVMYfvaLSfR5IAse6sAgHCo3NpZ8RAAUnOV5UvpYBMz6RjRfGjFrljUpj8pr6lY5xIDkYSBi0c39XN3bnmy0+Lx2lfO3SX8v6CbxN1Fh1eKeOOyUwmD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOfILjk6n3QLNLi3p0EUIvOMTQSiPKQh1bfSpuV4P3cgo3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyZ8eF1opye+2/EhccycXD0pJm/P6FnuYynx72QUFoVUKp3BheWxvYWTESpcCQMQg4Oh0XnuQ1D2ikuxan/J/Fxn45N8/RbsSZQ00QrhhEyrEIE6BApLFn495kKEyfNS52hzk35/hUgFNCBAlJSjHIasAAgHCo3NpZ8RARRUCw+TmGlGtOCF/0y/nd9T8KKiqzqhnRqwlmt0Ld49ICQ5Oc4O+AiuN09SuJ1W9ASVoB1hGZPlUGec3sCtUDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIcUiJYaIYfaf47aqRbBTT201TFnoYgZfeePJPEZ58hLo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
