@@ -17,9 +17,9 @@ import loopedGifSvg from './looped.gif.svg'
 import smogalarmJpgSvg from './smogalarm.jpg.svg'
 import tbGifSvg from './tb.gif.svg'
 import biastrackerJpgSvg from './biastracker.jpg.svg'
-import ishhhWebsiteWebmSvg from './ishhh-website.webm.svg'
 import ifopGifSvg from './ifop.gif.svg'
 import meloWebmSvg from './melo.webm.svg'
+import igMonitorPngSvg from './ig-monitor.png.svg'
 export {
   brokenpromisesPngSvg,
   datawrapperGifSvg,
@@ -40,7 +40,7 @@ export {
   smogalarmJpgSvg,
   tbGifSvg,
   biastrackerJpgSvg,
-  ishhhWebsiteWebmSvg,
   ifopGifSvg,
   meloWebmSvg,
+  igMonitorPngSvg,
 }
