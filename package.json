@@ -31,7 +31,7 @@
     "recompose": "^0.30.0"
   },
   "devDependencies": {
-    "async": "^3.0.1",
+    "async": "^3.2.2",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.1",
