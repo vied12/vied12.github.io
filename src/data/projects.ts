@@ -39,6 +39,7 @@ export const PROJECTS: Project[] = [
     stack: ['LLM', 'RAG', 'Agents', 'LlamaIndex', 'Django', 'Next.js', 'Celery', 'n8n'],
     categories: ['ai', 'tools'],
     link: 'https://aidp.ai',
+    media: 'aidp.webp',
   },
   {
     question: 'How do you turn a day of paperwork into minutes of review?',
@@ -51,6 +52,7 @@ export const PROJECTS: Project[] = [
     stack: ['LLM', 'Document AI', 'Intelliflo'],
     categories: ['ai', 'tools'],
     link: 'https://reloa.ai',
+    media: 'reloa.webp',
   },
   {
     question: 'Can AI find the right freelancer for a project?',
@@ -62,6 +64,7 @@ export const PROJECTS: Project[] = [
     stack: ['LLM', 'Semantic search', 'OpenSearch', 'Django', 'React', 'Celery', 'Phoenix'],
     categories: ['ai', 'tools'],
     link: 'https://www.kiedis.com/',
+    media: 'kiedis.webp',
   },
   {
     question: 'Can an auditor onboard a client’s data in two hours instead of three weeks?',

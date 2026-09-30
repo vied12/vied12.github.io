@@ -33,7 +33,13 @@ const host = (url: string) => new URL(url).hostname.replace(/^www\./, '')
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://www.edri.fr/cover.png" />
+    <meta property="og:url" content="https://www.edri.fr/" />
+    <meta property="og:image" content="https://www.edri.fr/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={description} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://www.edri.fr/" />
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body>
