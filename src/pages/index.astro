@@ -1,0 +1,198 @@
+---
+import '@fontsource-variable/geist'
+import '@fontsource-variable/geist-mono'
+import '../styles/global.css'
+import { PROJECTS, CATEGORIES } from '../data/projects'
+
+const DEV = import.meta.env.DEV
+const EMAIL = 'hi@edri.fr'
+
+const title = 'Edouard Richard — AI products, from question to answer'
+const description =
+  'Freelance engineer in Berlin. I build AI products that turn documents and data into answers.'
+
+// Hidden projects stay visible in dev only, with a badge, so they can still be reviewed.
+const projects = PROJECTS.filter((p) => DEV || !p.hidden)
+
+const count = (id: string) =>
+  projects.filter((p) => p.categories.includes(id as never)).length
+
+const splitQuestion = (q: string) =>
+  q.endsWith('?') ? [q.slice(0, -1), '?'] : [q, '']
+
+const host = (url: string) => new URL(url).hostname.replace(/^www\./, '')
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://www.edri.fr/cover.png" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <header class="top wrap">
+      <a class="brand" href="/">Edouard Richard</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro wrap">
+        <p class="kicker">Freelance engineer · Berlin</p>
+        <h1>I build AI products that turn documents and data into answers.</h1>
+        <p class="lede">
+          For thirteen years I have built tools for newsrooms, researchers and
+          companies. The method stays the same: start from a real question, then
+          ship the tool that answers it. Today, most of these tools use AI, and I
+          build them with AI agents at my side.
+        </p>
+        <a class="cta" href="#contact">Bring me your question <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section id="work" class="work wrap" aria-labelledby="work-title">
+        <div class="work-head">
+          <h2 id="work-title">Questions I answered</h2>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button type="button" data-filter="all" aria-pressed="true">
+              All <span class="n">{projects.length}</span>
+            </button>
+            {
+              CATEGORIES.map((c) => (
+                <button type="button" data-filter={c.id} aria-pressed="false">
+                  {c.label} <span class="n">{count(c.id)}</span>
+                </button>
+              ))
+            }
+          </div>
+        </div>
+
+        <ol class="questions">
+          {
+            projects.map((p) => {
+              const [q, mark] = splitQuestion(p.question)
+              return (
+                <li data-categories={p.categories.join(' ')}>
+                  <details>
+                    <summary>
+                      <span class="year">{p.years}</span>
+                      <span class="q">
+                        {q}
+                        <span class="mark">{mark}</span>
+                      </span>
+                      <span class="meta">
+                        <span class="name">{p.name}</span>
+                        {p.with && p.with !== p.name && <span> · {p.with}</span>}
+                        {p.status && <span class="status">{p.status}</span>}
+                        {DEV && p.todo && <span class="todo">draft</span>}
+                        {DEV && p.hidden && <span class="todo">hidden</span>}
+                      </span>
+                      <span class="toggle" aria-hidden="true" />
+                    </summary>
+                    <div class="answer">
+                      {p.media &&
+                        (p.media.endsWith('.webm') ? (
+                          <video
+                            class="media"
+                            data-src={`/screenshots/${p.media}`}
+                            muted
+                            loop
+                            playsinline
+                            preload="none"
+                          />
+                        ) : (
+                          <img
+                            class="media"
+                            src={`/screenshots/${p.media}`}
+                            alt={`Screenshot of ${p.name}`}
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        ))}
+                      <div class="text">
+                        {p.result && <p class="result">{p.result}</p>}
+                        <p>{p.description}</p>
+                        {p.stack.length > 0 && (
+                          <ul class="stack">
+                            {p.stack.map((s) => (
+                              <li>{s}</li>
+                            ))}
+                          </ul>
+                        )}
+                        {p.link && (
+                          <a class="visit" href={p.link} target="_blank" rel="noopener noreferrer">
+                            {host(p.link)} <span aria-hidden="true">↗</span>
+                          </a>
+                        )}
+                        {DEV && p.todo && <p class="todo-note">TODO: {p.todo}</p>}
+                      </div>
+                    </div>
+                  </details>
+                </li>
+              )
+            })
+          }
+        </ol>
+      </section>
+
+      <section id="contact" class="wrap">
+        <div class="contact">
+          <p class="q big">What is your question<span class="mark">?</span></p>
+          <p class="lede">
+            Tell me about the problem, the documents or the data. I answer
+            every message.
+          </p>
+          <p class="links">
+            <a class="cta" href={`mailto:${EMAIL}`}>{EMAIL}</a>
+            <a href="https://github.com/vied12" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap">© {new Date().getFullYear()} Edouard Richard</footer>
+
+    <script>
+      const buttons = [...document.querySelectorAll<HTMLButtonElement>('.filters button')]
+      const items = [...document.querySelectorAll<HTMLLIElement>('.questions > li')]
+
+      function apply(filter: string) {
+        buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === filter)))
+        items.forEach((li) => {
+          li.hidden = filter !== 'all' && !li.dataset.categories!.split(' ').includes(filter)
+        })
+        const url = new URL(location.href)
+        if (filter === 'all') url.searchParams.delete('f')
+        else url.searchParams.set('f', filter)
+        history.replaceState(null, '', url)
+      }
+
+      buttons.forEach((b) => b.addEventListener('click', () => apply(b.dataset.filter!)))
+
+      const initial = new URL(location.href).searchParams.get('f')
+      if (initial && buttons.some((b) => b.dataset.filter === initial)) apply(initial)
+
+      // Videos load only when their project opens.
+      document.querySelectorAll('details').forEach((d) =>
+        d.addEventListener('toggle', () => {
+          const video = d.querySelector<HTMLVideoElement>('video[data-src]')
+          if (!video) return
+          if (d.open) {
+            if (!video.src) video.src = video.dataset.src!
+            video.play().catch(() => {})
+          } else {
+            video.pause()
+          }
+        })
+      )
+    </script>
+  </body>
+</html>
