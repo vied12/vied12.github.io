@@ -437,7 +437,6 @@ summary:focus-visible {
   gap: 1.25rem;
   align-items: center;
   margin-top: 2.5rem;
-  font-size: 0.9rem;
   color: var(--muted);
 }
 
@@ -450,12 +449,11 @@ summary:focus-visible {
 }
 
 .mesh .mesh-name {
+  display: inline-block;
+  margin-top: 0.25rem;
   color: var(--fg);
   font-weight: 500;
-}
-
-.tap-hint {
-  display: none;
+  text-decoration: none;
 }
 
 /* White tile in both themes, so the code stays scannable in dark mode. */
@@ -476,12 +474,8 @@ summary:focus-visible {
 
 /* A phone cannot scan its own screen: keep only the link there. */
 @media (max-width: 47.99rem) {
-  .mesh .qr,
-  .qr-hint {
+  .mesh .qr {
     display: none;
-  }
-  .tap-hint {
-    display: inline;
   }
 }
 

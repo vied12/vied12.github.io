@@ -171,12 +171,10 @@ const host = (url: string) => new URL(url).hostname.replace(/^www\./, '')
             <a href="https://github.com/vied12" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </p>
           <div class="mesh">
-            <div class="qr" role="img" aria-label="QR code to add me on MeshCore" set:html={meshcoreQR} />
+            <div class="qr" role="img" aria-label={`Radio contact: ${meshcoreName}`} set:html={meshcoreQR} />
             <p>
-              On <a href="https://meshcore.io" target="_blank" rel="noopener noreferrer">MeshCore</a>, I am{' '}
-              <a class="mesh-name" href={MESHCORE}>{meshcoreName}</a>.<br />
-              <span class="qr-hint">Scan the code with the MeshCore app.</span>
-              <span class="tap-hint">Tap my name to add me in the app.</span>
+              Or catch me on the radio waves, somewhere over Berlin.<br />
+              <a class="mesh-name" href={MESHCORE}>{meshcoreName}</a>
             </p>
           </div>
         </div>
