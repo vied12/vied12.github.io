@@ -2,20 +2,12 @@
 import '@fontsource-variable/geist'
 import '@fontsource-variable/geist-mono'
 import '../styles/global.css'
-import QRCode from 'qrcode'
 import { PROJECTS, CATEGORIES } from '../data/projects'
 
 const DEV = import.meta.env.DEV
 const EMAIL = 'hi@edri.fr'
 const MESHCORE =
   'meshcore://contact/add?name=%F0%9F%A6%86Wesh+le+mesh&public_key=226a24dd7bc1b51bb1ed17b7579a05c395436dfcf0f80a65f45ee76d78bddbd5&type=1'
-const meshcoreName = new URL(MESHCORE).searchParams.get('name')
-// Built once at build time: desktop visitors scan it with the MeshCore app on their phone.
-const meshcoreQR = await QRCode.toString(MESHCORE, {
-  type: 'svg',
-  margin: 0,
-  color: { dark: '#16151a', light: '#ffffff' },
-})
 
 const title = 'Edouard Richard — AI products, from question to answer'
 const description =
@@ -170,13 +162,9 @@ const host = (url: string) => new URL(url).hostname.replace(/^www\./, '')
             <a class="cta" href={`mailto:${EMAIL}`}>{EMAIL}</a>
             <a href="https://github.com/vied12" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </p>
-          <div class="mesh">
-            <div class="qr" role="img" aria-label={`Radio contact: ${meshcoreName}`} set:html={meshcoreQR} />
-            <p>
-              Or catch me on the radio waves, somewhere over Berlin.<br />
-              <a class="mesh-name" href={MESHCORE}>{meshcoreName}</a>
-            </p>
-          </div>
+          <p class="mesh">
+            Or catch me on the <a href={MESHCORE}>radio waves</a>, somewhere over Berlin.
+          </p>
         </div>
       </section>
     </main>

@@ -433,50 +433,12 @@ summary:focus-visible {
 }
 
 .mesh {
-  display: flex;
-  gap: 1.25rem;
-  align-items: center;
-  margin-top: 2.5rem;
+  margin: 2.5rem 0 0;
   color: var(--muted);
 }
 
-.mesh p {
-  margin: 0;
-}
-
 .mesh a {
-  color: inherit;
-}
-
-.mesh .mesh-name {
-  display: inline-block;
-  margin-top: 0.25rem;
   color: var(--fg);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-/* White tile in both themes, so the code stays scannable in dark mode. */
-.mesh .qr {
-  flex: none;
-  width: 6.5rem;
-  padding: 0.5rem;
-  background: #fff;
-  border-radius: 0.25rem;
-  border: 1px solid var(--line);
-}
-
-.mesh .qr svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* A phone cannot scan its own screen: keep only the link there. */
-@media (max-width: 47.99rem) {
-  .mesh .qr {
-    display: none;
-  }
 }
 
 footer {
